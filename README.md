@@ -1,5 +1,9 @@
 # VOSR for me
 
+新增实验模型 **v2：显式结构图、差异专属观测证据与整结构生成**，核心源码与训练/推理入口见 [`src/structure_observation_v2/README.md`](src/structure_observation_v2/README.md)。已实现并做 CPU 验证，尚未训练或确认 GPU 超分收益；v1.5 仍是已发布对照。
+
+[五页可编辑 draw.io 架构图](docs/architecture_v2/structure-observation-v2.drawio) · [总体 SVG](docs/architecture_v2/01-overall.svg) · [v2 实验协议](configs/structure_observation_v2.json)
+
 当前 **v1.5 原生结构基础与选择性视觉纠错**的核心源码，整理于 2026-11-11。以冻结的 VOSR 0.5B 多步模型为基础，两条轨迹共享前 16 步；原生路径读取桥前 RGB，执行可信配准和带符号残差纠正，最后与相机校准及跨尺度视觉估计进行分频纠错。
 
 ## 项目阅读入口

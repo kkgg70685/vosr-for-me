@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs><filter id="shadow" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="2" dy="4" stdDeviation="4" flood-opacity="0.15"/></filter>
+<marker id="blue" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9Z" fill="#355786"/></marker>
+<marker id="orange" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9Z" fill="#9e572c"/></marker>
+<marker id="pink" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9Z" fill="#9c646f"/></marker>
+<marker id="green" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9Z" fill="#4e8267"/></marker>
+<marker id="gray" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9Z" fill="#777d85"/></marker>
+<marker id="white" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9Z" fill="#355786"/></marker>
+</defs><rect width="1600" height="1000" fill="white"/>
+<text x="800" y="49" text-anchor="middle" font-family="Georgia,serif" font-size="29" fill="#172236">VOSR v2 · Structure and observation</text>
+<text x="800" y="86" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="#556174">Frozen content / material generation + explicit graph hypotheses + native-default output</text>
+<polyline points="180.0,165.0 180.0,195.0 180.0,195.0 180.0,225.0" fill="none" stroke="#355786" stroke-width="2" marker-end="url(#blue)"/>
+<polyline points="180.0,295.0 180.0,322.5 180.0,322.5 180.0,350.0" fill="none" stroke="#355786" stroke-width="2" marker-end="url(#blue)"/>
+<polyline points="310.0,385.0 260.0,385.0 260.0,525.0 210.0,525.0" fill="none" stroke="#355786" stroke-width="2" marker-end="url(#blue)"/>
+<polyline points="445.0,565.0 445.0,602.5 225.0,602.5 225.0,640.0" fill="none" stroke="#355786" stroke-width="2" marker-end="url(#blue)"/>
+<polyline points="225.0,720.0 225.0,750.0 225.0,750.0 225.0,780.0" fill="none" stroke="#355786" stroke-width="2" marker-end="url(#blue)"/>
+<polyline points="270.0,132.5 325.0,132.5 325.0,260.0 380.0,260.0" fill="none" stroke="#9e572c" stroke-width="2" marker-end="url(#orange)" stroke-dasharray="8 6"/>
+<polyline points="510.0,295.0 510.0,322.5 510.0,322.5 510.0,350.0" fill="none" stroke="#9e572c" stroke-width="2" marker-end="url(#orange)" stroke-dasharray="8 6"/>
+<polyline points="510.0,420.0 510.0,452.5 445.0,452.5 445.0,485.0" fill="none" stroke="#9e572c" stroke-width="2" marker-end="url(#orange)" stroke-dasharray="8 6"/>
+<polyline points="270.0,132.5 655.0,132.5 655.0,140.0 1040.0,140.0" fill="none" stroke="#4e8267" stroke-width="2" marker-end="url(#green)" stroke-dasharray="8 6"/>
+<polyline points="1275.0,180.0 1275.0,202.5 1275.0,202.5 1275.0,225.0" fill="none" stroke="#4e8267" stroke-width="2" marker-end="url(#green)" stroke-dasharray="8 6"/>
+<polyline points="1275.0,305.0 1275.0,327.5 1275.0,327.5 1275.0,350.0" fill="none" stroke="#4e8267" stroke-width="2" marker-end="url(#green)" stroke-dasharray="8 6"/>
+<polyline points="1275.0,450.0 1275.0,475.0 1275.0,475.0 1275.0,500.0" fill="none" stroke="#4e8267" stroke-width="2" marker-end="url(#green)" stroke-dasharray="8 6"/>
+<polyline points="1040.0,540.0 975.0,540.0 975.0,680.0 910.0,680.0" fill="none" stroke="#4e8267" stroke-width="2" marker-end="url(#green)" stroke-dasharray="8 6"/>
+<polyline points="680.0,525.0 615.0,525.0 615.0,680.0 550.0,680.0" fill="none" stroke="#9c646f" stroke-width="2" marker-end="url(#pink)"/>
+<text x="615.0" y="595.5" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#355786">same latent</text>
+<polyline points="730.0,720.0 730.0,750.0 730.0,750.0 730.0,780.0" fill="none" stroke="#9c646f" stroke-width="2" marker-end="url(#pink)"/>
+<polyline points="910.0,815.0 975.0,815.0 975.0,705.0 1040.0,705.0" fill="none" stroke="#9c646f" stroke-width="2" marker-end="url(#pink)"/>
+<polyline points="225,850 225,925 990,925 990,735 1040,735" fill="none" stroke="#355786" stroke-width="2" marker-end="url(#blue)"/>
+<text x="580" y="917" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#355786">native default</text>
+<polyline points="1275.0,755.0 1275.0,787.5 1275.0,787.5 1275.0,820.0" fill="none" stroke="#4e8267" stroke-width="2" marker-end="url(#green)"/>
+<rect x="90" y="100" width="180" height="65" rx="12" fill="#ffffff" stroke="#355786" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="180.0" y="126.5" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">LR image</text>
+<text x="180.0" y="150.5" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">128 × 128 RGB</text>
+<rect x="50" y="225" width="260" height="70" rx="12" fill="#6089ce" stroke="#355786" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="180.0" y="266.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Frozen VAE / spatial encoder</text>
+<rect x="380" y="225" width="260" height="70" rx="12" fill="#e99557" stroke="#9e572c" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="510.0" y="266.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Frozen vision encoder</text>
+<rect x="1040" y="100" width="470" height="80" rx="12" fill="#b8dbc7" stroke="#4e8267" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1275.0" y="134.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">LR StructureHead</text>
+<text x="1275.0" y="158.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">occupancy · endpoints · corners · links · period</text>
+<rect x="1040" y="225" width="470" height="80" rx="12" fill="#b8dbc7" stroke="#4e8267" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1275.0" y="259.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Whole-object graph alternatives</text>
+<text x="1275.0" y="283.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">position / connection / repeated phase</text>
+<rect x="1040" y="350" width="470" height="100" rx="12" fill="#b8dbc7" stroke="#4e8267" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1275.0" y="382.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">One shared camera + one appearance fit</text>
+<text x="1275.0" y="406.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">finite nuisance covariance / paired LR evidence</text>
+<text x="1275.0" y="430.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">keep ambiguous candidates</text>
+<rect x="1040" y="500" width="470" height="80" rx="12" fill="#b8dbc7" stroke="#4e8267" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1275.0" y="534.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">One candidate per object and seed</text>
+<text x="1275.0" y="558.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">spatial graph + 3 relation strengths</text>
+<rect x="50" y="350" width="260" height="70" rx="12" fill="#6089ce" stroke="#355786" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="180.0" y="391.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Spatial latent condition</text>
+<rect x="380" y="350" width="260" height="70" rx="12" fill="#e99557" stroke="#9e572c" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="510.0" y="391.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Visual semantic tokens</text>
+<rect x="210" y="485" width="470" height="80" rx="12" fill="#efb9be" stroke="#9c646f" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="445.0" y="519.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Frozen VOSR velocity · Euler steps 1–16</text>
+<text x="445.0" y="543.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">shared condition, noise and latent state</text>
+<rect x="70" y="640" width="310" height="80" rx="12" fill="#6089ce" stroke="#355786" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="225.0" y="674.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Native suffix · steps 17–25</text>
+<text x="225.0" y="698.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">native velocity + condition</text>
+<rect x="550" y="640" width="360" height="80" rx="12" fill="#efb9be" stroke="#9c646f" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="730.0" y="674.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Revised suffix · steps 17–25</text>
+<text x="730.0" y="698.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">v + spatial velocity adapter</text>
+<rect x="70" y="780" width="310" height="70" rx="12" fill="#6089ce" stroke="#355786" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="225.0" y="809.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Frozen decoder</text>
+<text x="225.0" y="833.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">native RGB + native texture</text>
+<rect x="550" y="780" width="360" height="70" rx="12" fill="#efb9be" stroke="#9c646f" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="730.0" y="809.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Same frozen decoder</text>
+<text x="730.0" y="833.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">revised RGB + attached texture</text>
+<rect x="1040" y="655" width="470" height="100" rx="12" fill="#b8dbc7" stroke="#4e8267" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1275.0" y="687.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Atomic object acceptance</text>
+<text x="1275.0" y="711.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">relation evidence + actual RGB reprojection</text>
+<text x="1275.0" y="735.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">copy whole object; blend only outside</text>
+<rect x="1040" y="820" width="470" height="90" rx="12" fill="#ffffff" stroke="#355786" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1275.0" y="847.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Native-default SR</text>
+<text x="1275.0" y="871.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">bounded coarse photometric feedback</text>
+<text x="1275.0" y="895.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">512 × 512 RGB</text>
+<text x="800" y="970" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="#556174">Blue: spatial / native · Orange: visual / ambiguity · Green: structure / evidence · Pink: velocity · Gray: nuisance / training</text></svg>

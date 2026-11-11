@@ -1,0 +1,128 @@
+{
+  "version": "structure-observation-v2.0",
+  "base_commit": "5b116bd5f8f998f708c3b265f822b52a40cb668a",
+  "policy": "New architecture; original provenance.json publication bytes are retained.",
+  "gpu_experiments_performed": false,
+  "files": [
+    {
+      "path": ".github/workflows/structure-v2.yml",
+      "sha256": "bbe5278038699670715717d6abfb04f43b26fda8517ca4a51b59d4480d1f40d3",
+      "bytes": 837
+    },
+    {
+      "path": "README.md",
+      "sha256": "f6e83a1ac518ea14df48dd1e4236338e18636336ed93e5dc7e43838788aab1f8",
+      "bytes": 4051
+    },
+    {
+      "path": "configs/structure_observation_v2.json",
+      "sha256": "84ae004ddddadaa7a871c9294f1affb41ba022867c459e1b68e06e995b79919e",
+      "bytes": 2905
+    },
+    {
+      "path": "docs/architecture_v2/01-overall.svg",
+      "sha256": "1716d9247818ce8590ea15a6b9f70f3ec4be1314922c1c59eeb2b8a04369c191",
+      "bytes": 11150
+    },
+    {
+      "path": "docs/architecture_v2/02-structure.svg",
+      "sha256": "3c93b6b5f8c84db68ada3ffa23ea6b0ad2ccc3eb8db4555cef689890655f6a24",
+      "bytes": 8001
+    },
+    {
+      "path": "docs/architecture_v2/03-evidence.svg",
+      "sha256": "2685f1d79e927a6b7f7baea778e6312ac2019e9903a774e1867fb7f5992b93f2",
+      "bytes": 7926
+    },
+    {
+      "path": "docs/architecture_v2/04-generation-output.svg",
+      "sha256": "a4b0ec98163f940023000fb24bf78caaf875a9458fa91672b52e4e538f51fe51",
+      "bytes": 8534
+    },
+    {
+      "path": "docs/architecture_v2/05-training-experiments.svg",
+      "sha256": "95023fe273b91dcea6564d416874631aaff7d2dc4f3d94baa5adf9f1f1e2b568",
+      "bytes": 8249
+    },
+    {
+      "path": "docs/architecture_v2/structure-observation-v2.drawio",
+      "sha256": "eef44619a9e68d33c86606d365e32f55254af438aaac6a7e7375ab261807dd45",
+      "bytes": 43679
+    },
+    {
+      "path": "src/structure_observation_v2/README.md",
+      "sha256": "8d118642bfef5b6e3d4a5f0441ef4a25643e7c289552a395a81e72aa432cb60c",
+      "bytes": 10559
+    },
+    {
+      "path": "src/structure_observation_v2/__init__.py",
+      "sha256": "45571fe6b503f484fcbd77fa4ace349ae6152eeaa9df0857a81b79542872acf3",
+      "bytes": 125
+    },
+    {
+      "path": "src/structure_observation_v2/config.py",
+      "sha256": "dbd04a07922144736306fc22c6f2f7e57fb9fe4b38ab6f3c503bad9278629087",
+      "bytes": 1366
+    },
+    {
+      "path": "src/structure_observation_v2/data.py",
+      "sha256": "1e63fcd41d61a7dd18bb61567d66b862a7a6f85b0d6148999a2082fbd9d6a408",
+      "bytes": 4544
+    },
+    {
+      "path": "src/structure_observation_v2/evaluate.py",
+      "sha256": "1de93263ef98398fc6bda3f075238a6ca6b40f6d5110d888701e2fd50e25ea01",
+      "bytes": 10876
+    },
+    {
+      "path": "src/structure_observation_v2/infer.py",
+      "sha256": "e813d35eb2a4a8c298201f42630d6ddc4497cef9e3239a706d73582a9e1334dd",
+      "bytes": 1845
+    },
+    {
+      "path": "src/structure_observation_v2/model.py",
+      "sha256": "a9427c0e6d75e884d70852bf47e0de41b024d57291e96b473c33cc563bc39ad3",
+      "bytes": 11813
+    },
+    {
+      "path": "src/structure_observation_v2/observation.py",
+      "sha256": "cf2b3b76e0d833dc4b52c9a44f50dd1080c35e1aad7ec486631d25f7c36d5a39",
+      "bytes": 10925
+    },
+    {
+      "path": "src/structure_observation_v2/requirements.txt",
+      "sha256": "c76e26874f5fa36bd88b03979930ec4b7040b6e4c43992c2bad9f8445a77b1b9",
+      "bytes": 194
+    },
+    {
+      "path": "src/structure_observation_v2/runtime.py",
+      "sha256": "c3e6c2826ecbd95227cbcc012575ee640a900bff7a7554a068dd66b5b6ad9af8",
+      "bytes": 4252
+    },
+    {
+      "path": "src/structure_observation_v2/structure.py",
+      "sha256": "e4cd194ae5b50dceff6a22fc6cbb2ce7dfccdd70486746fbba1b7c299cb4fe5b",
+      "bytes": 10265
+    },
+    {
+      "path": "src/structure_observation_v2/train.py",
+      "sha256": "1aaae7b454fae138ed4d42c85674c477ac5687ea0a68881818a00fc5bdde5d92",
+      "bytes": 8861
+    },
+    {
+      "path": "tests/test_structure_v2.py",
+      "sha256": "13a7b1e406a65bcf1d7eb1e28b7145d00cb3e395a3e5fab2e442b5d7b3ea0812",
+      "bytes": 12748
+    },
+    {
+      "path": "tools/draw_structure_v2.py",
+      "sha256": "671e9a6b490e7726b5b3aa1c77e024893cecf8287684a8b4922f80b4c6b0c80c",
+      "bytes": 18000
+    },
+    {
+      "path": "tools/verify_v2.py",
+      "sha256": "22bb768c3d435ed4eff85649609a691048a7dbbafb048406b23f7a99c34886f3",
+      "bytes": 2829
+    }
+  ]
+}
