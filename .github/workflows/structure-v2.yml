@@ -1,0 +1,28 @@
+name: Structure v2 CPU contracts
+on:
+  push:
+    branches: [main, codex/structure-observation-v2]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  cpu-contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install CPU dependencies
+        run: |
+          python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install numpy scipy Pillow
+      - name: Verify publication and v2 source identities
+        run: |
+          python tools/verify_source.py
+          python tools/verify_v2.py
+      - name: Test structural and generation invariants
+        env:
+          PYTHONPATH: src
+        run: python -m unittest discover -s tests -v

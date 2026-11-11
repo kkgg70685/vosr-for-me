@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs><filter id="shadow" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="2" dy="4" stdDeviation="4" flood-opacity="0.15"/></filter>
+<marker id="blue" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9Z" fill="#355786"/></marker>
+<marker id="orange" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9Z" fill="#9e572c"/></marker>
+<marker id="pink" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9Z" fill="#9c646f"/></marker>
+<marker id="green" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9Z" fill="#4e8267"/></marker>
+<marker id="gray" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9Z" fill="#777d85"/></marker>
+<marker id="white" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9Z" fill="#355786"/></marker>
+</defs><rect width="1600" height="1000" fill="white"/>
+<text x="800" y="49" text-anchor="middle" font-family="Georgia,serif" font-size="29" fill="#172236">Difference-specific observation evidence</text>
+<text x="800" y="86" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="#556174">observation.py: shared image formation; finite camera uncertainty; abstention when a proxy cannot explain the LR</text>
+<polyline points="440.0,190.0 525.0,190.0 525.0,190.0 610.0,190.0" fill="none" stroke="#4e8267" stroke-width="2" marker-end="url(#green)"/>
+<polyline points="795.0,240.0 795.0,290.0 795.0,290.0 795.0,340.0" fill="none" stroke="#355786" stroke-width="2" marker-end="url(#blue)"/>
+<polyline points="1160.0,190.0 1070.0,190.0 1070.0,392.5 980.0,392.5" fill="none" stroke="#355786" stroke-width="2" marker-end="url(#blue)" stroke-dasharray="8 6"/>
+<polyline points="610.0,392.5 545.0,392.5 545.0,595.0 480.0,595.0" fill="none" stroke="#777d85" stroke-width="2" marker-end="url(#gray)"/>
+<polyline points="480.0,595.0 545.0,595.0 545.0,595.0 610.0,595.0" fill="none" stroke="#777d85" stroke-width="2" marker-end="url(#gray)"/>
+<polyline points="795.0,445.0 795.0,487.5 795.0,487.5 795.0,530.0" fill="none" stroke="#4e8267" stroke-width="2" marker-end="url(#green)"/>
+<polyline points="980.0,595.0 1060.0,595.0 1060.0,595.0 1140.0,595.0" fill="none" stroke="#4e8267" stroke-width="2" marker-end="url(#green)"/>
+<polyline points="1140.0,595.0 1165.0,595.0 1165.0,855.0 1190.0,855.0" fill="none" stroke="#9e572c" stroke-width="2" marker-end="url(#orange)" stroke-dasharray="8 6"/>
+<rect x="70" y="140" width="370" height="100" rx="12" fill="#b8dbc7" stroke="#4e8267" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="255.0" y="172.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Complete graph candidates</text>
+<text x="255.0" y="196.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">common foreground / background plane</text>
+<text x="255.0" y="220.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">fitted once to the mean occupancy</text>
+<rect x="610" y="140" width="370" height="100" rx="12" fill="#6089ce" stroke="#355786" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="795.0" y="172.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">One frozen HR → LR sensor</text>
+<text x="795.0" y="196.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">common blur + registration bank</text>
+<text x="795.0" y="220.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">identical parameters for every candidate</text>
+<rect x="1160" y="140" width="330" height="100" rx="12" fill="#ffffff" stroke="#355786" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1325.0" y="172.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Observed LR</text>
+<text x="1325.0" y="196.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">fixed noise floor</text>
+<text x="1325.0" y="220.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">object + PSF footprint</text>
+<rect x="610" y="340" width="370" height="105" rx="12" fill="#b8dbc7" stroke="#4e8267" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="795.0" y="374.5" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Paired counterfactual difference</text>
+<text x="795.0" y="398.5" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Δ = Dθ(candidate B) − Dθ(candidate A)</text>
+<text x="795.0" y="422.5" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">residual measured against pair midpoint</text>
+<rect x="70" y="530" width="410" height="130" rx="12" fill="#e2e3e5" stroke="#777d85" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="275.0" y="565.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Separate nuisance explanations</text>
+<text x="275.0" y="589.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">project out RGB constant / slow planes</text>
+<text x="275.0" y="613.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">whiten with finite camera covariance</text>
+<text x="275.0" y="637.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">large moves are not erased</text>
+<rect x="610" y="530" width="370" height="130" rx="12" fill="#b8dbc7" stroke="#4e8267" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="795.0" y="565.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Separate tests for EACH difference</text>
+<text x="795.0" y="589.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">whitened separation ≥ 3</text>
+<text x="795.0" y="613.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">paired preference ≥ 2</text>
+<text x="795.0" y="637.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">absolute fit RMS ≤ 4 noise units</text>
+<rect x="1140" y="530" width="350" height="130" rx="12" fill="#e99557" stroke="#9e572c" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1315.0" y="565.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Keep plausible whole candidates</text>
+<text x="1315.0" y="589.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">seed chooses one coherent graph</text>
+<text x="1315.0" y="613.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">position / topology / phase strengths</text>
+<text x="1315.0" y="637.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">never one universal confidence</text>
+<rect x="430" y="805" width="760" height="100" rx="12" fill="#ffffff" stroke="#355786" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="810.0" y="837.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Conservative finite-bank criterion, not a calibrated posterior</text>
+<text x="810.0" y="861.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Poor model fit → no evidence. Different factors are not conflated.</text>
+<text x="810.0" y="885.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">An inference candidate is never selected using HR.</text>
+<text x="800" y="970" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="#556174">Blue: spatial / native · Orange: visual / ambiguity · Green: structure / evidence · Pink: velocity · Gray: nuisance / training</text></svg>

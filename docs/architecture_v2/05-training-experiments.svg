@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs><filter id="shadow" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="2" dy="4" stdDeviation="4" flood-opacity="0.15"/></filter>
+<marker id="blue" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9Z" fill="#355786"/></marker>
+<marker id="orange" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9Z" fill="#9e572c"/></marker>
+<marker id="pink" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9Z" fill="#9c646f"/></marker>
+<marker id="green" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9Z" fill="#4e8267"/></marker>
+<marker id="gray" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9Z" fill="#777d85"/></marker>
+<marker id="white" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9Z" fill="#355786"/></marker>
+</defs><rect width="1600" height="1000" fill="white"/>
+<text x="800" y="49" text-anchor="middle" font-family="Georgia,serif" font-size="29" fill="#172236">Training and experiments · What is and is not established</text>
+<text x="800" y="86" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="#556174">train.py / evaluate.py: train new modules only; isolate parents and cameras; retain failed readouts in denominators</text>
+<polyline points="470.0,200.0 540.0,200.0 540.0,210.0 610.0,210.0" fill="none" stroke="#4e8267" stroke-width="2" marker-end="url(#green)"/>
+<polyline points="990.0,210.0 1065.0,210.0 1065.0,222.5 1140.0,222.5" fill="none" stroke="#4e8267" stroke-width="2" marker-end="url(#green)"/>
+<polyline points="270,150 270,115 1325,115 1325,150" fill="none" stroke="#777d85" stroke-width="2" marker-end="url(#gray)" stroke-dasharray="8 6"/>
+<text x="790" y="108" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#355786">HR is training-only</text>
+<polyline points="1325.0,295.0 1325.0,352.5 1325.0,352.5 1325.0,410.0" fill="none" stroke="#9c646f" stroke-width="2" marker-end="url(#pink)"/>
+<polyline points="1140.0,462.5 1065.0,462.5 1065.0,462.5 990.0,462.5" fill="none" stroke="#9c646f" stroke-width="2" marker-end="url(#pink)"/>
+<polyline points="610.0,462.5 540.0,462.5 540.0,482.5 470.0,482.5" fill="none" stroke="#355786" stroke-width="2" marker-end="url(#blue)"/>
+<polyline points="470.0,482.5 460.0,482.5 460.0,780.0 450.0,780.0" fill="none" stroke="#355786" stroke-width="2" marker-end="url(#blue)"/>
+<polyline points="800.0,515.0 800.0,610.0 820.0,610.0 820.0,705.0" fill="none" stroke="#777d85" stroke-width="2" marker-end="url(#gray)" stroke-dasharray="8 6"/>
+<text x="810.0" y="603.0" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#355786">locked protocol</text>
+<rect x="70" y="150" width="400" height="100" rx="12" fill="#ffffff" stroke="#355786" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="270.0" y="182.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Training-only paired data</text>
+<text x="270.0" y="206.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">LR + HR + explicit structure masks</text>
+<text x="270.0" y="230.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">synthetic primitives for initialisation</text>
+<rect x="610" y="150" width="380" height="120" rx="12" fill="#b8dbc7" stroke="#4e8267" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="800.0" y="180.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Stage A: train StructureHead</text>
+<text x="800.0" y="204.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">class-balanced 7-map supervision</text>
+<text x="800.0" y="228.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">period regression + link incidence</text>
+<text x="800.0" y="252.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">endpoint / graph proposal qualification</text>
+<rect x="1140" y="150" width="370" height="145" rx="12" fill="#efb9be" stroke="#9c646f" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1325.0" y="180.5" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Stage B: train velocity adapter</text>
+<text x="1325.0" y="204.5" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">frozen VOSR + frozen structure head</text>
+<text x="1325.0" y="228.5" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">HR selects a compatible training candidate</text>
+<text x="1325.0" y="252.5" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">sample a native suffix state</text>
+<text x="1325.0" y="276.5" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">decode clean-prediction surrogate</text>
+<rect x="1140" y="410" width="370" height="105" rx="12" fill="#efb9be" stroke="#9c646f" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1325.0" y="444.5" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Loss</text>
+<text x="1325.0" y="468.5" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">object RGB + signed gradients</text>
+<text x="1325.0" y="492.5" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">exterior identity + residual penalty</text>
+<rect x="610" y="410" width="380" height="105" rx="12" fill="#e2e3e5" stroke="#777d85" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="800.0" y="444.5" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Parent / camera-isolated development</text>
+<text x="800.0" y="468.5" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">qualify graph and relation readout first</text>
+<text x="800.0" y="492.5" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">lock weights, masks, thresholds, protocol</text>
+<rect x="70" y="410" width="400" height="145" rx="12" fill="#6089ce" stroke="#355786" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="270.0" y="440.5" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Matched-seed comparisons</text>
+<text x="270.0" y="464.5" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">raw native / locked v1.5 / full v2</text>
+<text x="270.0" y="488.5" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">uniform / misplaced graph</text>
+<text x="270.0" y="512.5" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">no acceptance / no feedback</text>
+<text x="270.0" y="536.5" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">8, 12, 16, 20 shared-step interventions</text>
+<rect x="450" y="705" width="740" height="150" rx="12" fill="#ffffff" stroke="#355786" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="820.0" y="738.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Held-out evaluation</text>
+<text x="820.0" y="762.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">missing + unstable endpoint rates; connection error bounds</text>
+<text x="820.0" y="786.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">boundary / skeleton / phase; PSNR / LPIPS / DISTS</text>
+<text x="820.0" y="810.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">average seeds within parent → paired parent bootstrap</text>
+<text x="820.0" y="834.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">report every device, worst group, acceptance coverage, runtime and memory</text>
+<text x="800" y="970" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="#556174">Blue: spatial / native · Orange: visual / ambiguity · Green: structure / evidence · Pink: velocity · Gray: nuisance / training</text></svg>

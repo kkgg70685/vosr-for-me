@@ -1,0 +1,63 @@
+{
+  "protocol_id": "SOV2-20261111-01",
+  "status": "implementation_and_cpu_checks_only_no_gpu_result",
+  "architecture": "structure-observation-v2.0",
+  "published_baseline_commit": "5b116bd5f8f998f708c3b265f822b52a40cb668a",
+  "training": {
+    "structure_synthetic_steps": 20000,
+    "structure_annotated_finetune_steps": 5000,
+    "velocity_steps": 10000,
+    "optimizer": "AdamW",
+    "learning_rate": 0.0002,
+    "weight_decay": 0.0001,
+    "seed": 261111,
+    "frozen": ["VOSR", "VAE", "vision_encoder", "decoder", "camera"],
+    "velocity_objective": "decoded_clean_prediction_surrogate_not_flow_matching"
+  },
+  "inference": {
+    "steps": 25,
+    "shared_steps": 16,
+    "candidates_max": 8,
+    "candidate_choice": "one_complete_graph_per_object_per_seed",
+    "uncertainty": "finite_common_camera_covariance_plus_difference_specific_paired_tests",
+    "output": "native_default_atomic_rgb_texture_replacement",
+    "feedback": "bounded_4x4_rgb_lattice_with_shared_camera_line_search"
+  },
+  "development": {
+    "minimum_parents_per_camera": 12,
+    "readout_endpoint_radius_hr": 2,
+    "readout_thresholds": [0.45, 0.5, 0.55],
+    "readout_minimum_color_contrast": 0.03,
+    "maximum_missing_endpoint_rate": 0.2,
+    "maximum_threshold_disagreement_rate": 0.1,
+    "minimum_qualified_proposal_recall": 0.7,
+    "stop_if_readout_fails": true
+  },
+  "confirmation": {
+    "seeds": [6, 43, 61],
+    "recommended_minimum_fresh_parents_per_camera": 30,
+    "split_unit": "dataset_and_physical_parent_across_all_cameras_crops_seeds",
+    "camera_leave_one_out": true,
+    "average_seeds_before_parent_bootstrap": true,
+    "bootstrap_resamples": 2000,
+    "exclude_historically_exposed_scenes_from_fresh_claims": true,
+    "success_requires": [
+      "qualified_reference_and_output_structure_readouts",
+      "paired_connection_error_interval_improves_with_missing_counted",
+      "no_skeleton_or_phase_regression_in_each_device_group",
+      "psnr_delta_lower_95_bound_above_minus_0.05_dB_against_locked_v15",
+      "lpips_and_dists_delta_upper_95_bounds_below_0.005_against_locked_v15",
+      "report_acceptance_coverage_and_declined_objects_not_only_accepted_subset"
+    ]
+  },
+  "controls": ["native", "locked_v15", "full", "uniform", "no_acceptance", "no_feedback", "wrong_graph"],
+  "shared_step_interventions": [8, 12, 16, 20],
+  "schedule_note": "Schedule interventions with a fixed 16-step-trained adapter are mechanism probes, not equal-budget retrained architecture comparisons.",
+  "failure_interpretation": {
+    "low_proposal_recall": "representation_or_supervision_failure",
+    "proxy_bad_fit": "image_formation_or_appearance_failure_abstain",
+    "separable_but_no_revised_movement": "velocity_or_decoder_control_failure",
+    "revised_moves_but_gate_rejects": "unsupported_or_wrong_structure_or_miscalibrated_gate",
+    "all_declined": "native_safety_path_only_not_success"
+  }
+}

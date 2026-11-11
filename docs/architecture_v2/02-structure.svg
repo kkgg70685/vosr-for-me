@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs><filter id="shadow" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="2" dy="4" stdDeviation="4" flood-opacity="0.15"/></filter>
+<marker id="blue" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9Z" fill="#355786"/></marker>
+<marker id="orange" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9Z" fill="#9e572c"/></marker>
+<marker id="pink" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9Z" fill="#9c646f"/></marker>
+<marker id="green" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9Z" fill="#4e8267"/></marker>
+<marker id="gray" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9Z" fill="#777d85"/></marker>
+<marker id="white" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9Z" fill="#355786"/></marker>
+</defs><rect width="1600" height="1000" fill="white"/>
+<text x="800" y="49" text-anchor="middle" font-family="Georgia,serif" font-size="29" fill="#172236">Explicit structure · Complete alternatives</text>
+<text x="800" y="86" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="#556174">structure.py / model.py: graph identity is the decision unit; texture is not forced into a graph</text>
+<polyline points="200.0,200.0 200.0,232.5 200.0,232.5 200.0,265.0" fill="none" stroke="#4e8267" stroke-width="2" marker-end="url(#green)"/>
+<polyline points="330.0,320.0 380.0,320.0 380.0,270.0 430.0,270.0" fill="none" stroke="#4e8267" stroke-width="2" marker-end="url(#green)"/>
+<polyline points="860.0,270.0 945.0,270.0 945.0,270.0 1030.0,270.0" fill="none" stroke="#4e8267" stroke-width="2" marker-end="url(#green)"/>
+<polyline points="1250.0,350.0 1250.0,385.0 1250.0,385.0 1250.0,420.0" fill="none" stroke="#4e8267" stroke-width="2" marker-end="url(#green)"/>
+<polyline points="1250,530 1250,575 235,575 235,620" fill="none" stroke="#355786" stroke-width="2" marker-end="url(#blue)" stroke-dasharray="8 6"/>
+<polyline points="390.0,675.0 420.0,675.0 420.0,860.0 450.0,860.0" fill="none" stroke="#355786" stroke-width="2" marker-end="url(#blue)"/>
+<polyline points="1250,530 1250,575 645,575 645,620" fill="none" stroke="#9c646f" stroke-width="2" marker-end="url(#pink)" stroke-dasharray="8 6"/>
+<polyline points="645.0,730.0 645.0,772.5 805.0,772.5 805.0,815.0" fill="none" stroke="#9c646f" stroke-width="2" marker-end="url(#pink)"/>
+<polyline points="1250,530 1250,575 1055,575 1055,620" fill="none" stroke="#9e572c" stroke-width="2" marker-end="url(#orange)" stroke-dasharray="8 6"/>
+<polyline points="1055.0,730.0 1055.0,772.5 805.0,772.5 805.0,815.0" fill="none" stroke="#9e572c" stroke-width="2" marker-end="url(#orange)"/>
+<rect x="70" y="130" width="260" height="70" rx="12" fill="#ffffff" stroke="#355786" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="200.0" y="171.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">LR RGB</text>
+<rect x="70" y="265" width="260" height="110" rx="12" fill="#b8dbc7" stroke="#4e8267" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="200.0" y="302.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">StructureHead</text>
+<text x="200.0" y="326.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">3 × 3 convolution stack</text>
+<text x="200.0" y="350.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">subpixel ×4 output</text>
+<rect x="430" y="190" width="430" height="160" rx="12" fill="#b8dbc7" stroke="#4e8267" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="645.0" y="240.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">9 dense maps</text>
+<text x="645.0" y="264.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">ink / endpoint / corner / boundary</text>
+<text x="645.0" y="288.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">x-y affinity / repeat likelihood</text>
+<text x="645.0" y="312.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">period vector (dx, dy)</text>
+<rect x="1030" y="190" width="440" height="160" rx="12" fill="#b8dbc7" stroke="#4e8267" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1250.0" y="240.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Threshold → thin → explicit graph</text>
+<text x="1250.0" y="264.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">vertices at HR pixel centres</text>
+<text x="1250.0" y="288.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">edges encode actual connectivity</text>
+<text x="1250.0" y="312.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">endpoint / turn consistency from degree</text>
+<rect x="1030" y="420" width="440" height="110" rx="12" fill="#e2e3e5" stroke="#777d85" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1250.0" y="457.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">Merge nearby fragments and halos</text>
+<text x="1250.0" y="481.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">reject dense / oversized / colliding objects</text>
+<text x="1250.0" y="505.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">no arbitrary tiling of a stroke</text>
+<rect x="80" y="620" width="310" height="110" rx="12" fill="#6089ce" stroke="#355786" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="235.0" y="657.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">POSITION</text>
+<text x="235.0" y="681.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">reference + ±x / ±y translation</text>
+<text x="235.0" y="705.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">move the entire graph</text>
+<rect x="490" y="620" width="310" height="110" rx="12" fill="#efb9be" stroke="#9c646f" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="645.0" y="657.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">CONNECTION</text>
+<text x="645.0" y="681.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">join nearest eligible endpoints</text>
+<text x="645.0" y="705.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">or open a chain segment</text>
+<rect x="900" y="620" width="310" height="110" rx="12" fill="#e99557" stroke="#9e572c" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="1055.0" y="657.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">REPETITION PHASE</text>
+<text x="1055.0" y="681.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">optional half-period translation</text>
+<text x="1055.0" y="705.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">keep all repeated edges coherent</text>
+<rect x="450" y="815" width="710" height="90" rx="12" fill="#ffffff" stroke="#355786" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="805.0" y="854.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">At most 8 complete graphs per object</text>
+<text x="805.0" y="878.0" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#172236">reference + 4 position + 2 connection + 1 phase; no untested combinations</text>
+<text x="800" y="970" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="#556174">Blue: spatial / native · Orange: visual / ambiguity · Green: structure / evidence · Pink: velocity · Gray: nuisance / training</text></svg>
