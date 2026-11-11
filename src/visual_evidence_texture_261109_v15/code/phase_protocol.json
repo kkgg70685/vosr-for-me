@@ -1,0 +1,19 @@
+{
+  "development": "30 complementary V scenes not used to select the first LR mixture; 15 per camera",
+  "phase_weights": [
+    0.35,
+    0.65,
+    0.9
+  ],
+  "amplitude_gains": [
+    0,
+    0.45,
+    0.9
+  ],
+  "coarse_weights": [
+    0,
+    0.25
+  ],
+  "selection": "Both camera means: PSNR >= existing balanced V1.5 -0.03 dB; LPIPS <= existing V1.5; lower amplitude error. Prefer minimum pooled LPIPS. Matched retrieval, wrong keys/values, direct interpolation at fixed phase fraction on all panels even if validation selects identity.",
+  "new_test": "Same V1.5 E and two fixed T panels excluded from A8 training; additional test with a fresh seed 37 using DRealSR V, without evaluation-time retuning."
+}

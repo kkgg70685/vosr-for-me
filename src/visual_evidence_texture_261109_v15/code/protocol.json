@@ -1,0 +1,12 @@
+{
+  "run": "visual_evidence_texture_261109_v15",
+  "seed": 615,
+  "pretrain_scenes_per_camera": 96,
+  "training_updates": 1600,
+  "batch": 8,
+  "crop_lr": 32,
+  "pretrain_rng": 6191,
+  "selection": "Use 30 RealSR V scenes (mixed prior exposure; all 60 V already exposed in V1.5); lock before new confirm. Select global strengths by minimum LPIPS subject to camera-wise PSNR >= balanced V1.5 -0.03 dB, LPIPS <= balanced V1.5 and texture error <= balanced V1.5. Zero intervention available.",
+  "test": "RealSR E and DRealSR E (previously exposed), further unseen by new model: deterministic 12+12 leftover RealSR T and 24 DRealSR T distinct from A7 transfer set; seed 29. No trained DRealSR data.",
+  "controls": "Same-seed stage ablation: reuse same registered head with local alignment on/off, transfer only, self only, both and neither. Independently trained unregistered head. Cross-scale: LR-only network, LR patch-search memory, DINO re-ranked memory, misplaced DINO, wrong retrieved values, and zero memory. Evaluate alternatives on same inputs."
+}

@@ -1,0 +1,360 @@
+{
+  "model": "VOSR v1.5 native foundation and selective visual correction",
+  "source_archive_sha256": "0f8c113296d8e4e30fe780ac596f26023727aa4966aea54f55af9123c43001cb",
+  "source_policy": "Published source bytes preserved; remote orchestration and generated experiment data excluded.",
+  "files": [
+    {
+      "path": "src/native_anchor_bridge_261109_v1/code/bridge_calibrate.py",
+      "source_member": "实验A9+原生锚点与桥前证据校准+261109/bridge_calibrate.py",
+      "sha256": "7aee4b39c9f42c1a734b197649f0d74732761245e868c8631168075f91ff2919",
+      "bytes": 6698
+    },
+    {
+      "path": "src/native_anchor_bridge_261109_v1/code/bridge_trial.py",
+      "source_member": "实验A9+原生锚点与桥前证据校准+261109/bridge_trial.py",
+      "sha256": "4e766b515d19bb38ee4410c5ef8c9966ef8a266f6cd983883cd7d9fa13fc3f3b",
+      "bytes": 12034
+    },
+    {
+      "path": "src/native_anchor_bridge_261109_v1/code/cache.py",
+      "source_member": "实验A9+原生锚点与桥前证据校准+261109/cache.py",
+      "sha256": "a1f237c6704a7863f3e964c938f6e16e8c27c40ffdbdce086fc6b2577329c1e7",
+      "bytes": 2260
+    },
+    {
+      "path": "src/native_anchor_bridge_261109_v1/code/diagnosis.py",
+      "source_member": "实验A9+原生锚点与桥前证据校准+261109/diagnosis.py",
+      "sha256": "d337a59617c5afb4b7c6d1c8089418aa6292128cec6238bb2d1ff3d1464e8c19",
+      "bytes": 2548
+    },
+    {
+      "path": "src/native_anchor_bridge_261109_v1/code/infer_bridge.py",
+      "source_member": "实验A9+原生锚点与桥前证据校准+261109/infer_bridge.py",
+      "sha256": "c85c4e53f965590e938398ccc7030de3c5eae454b1b004616da8f006dca3a143",
+      "bytes": 1427
+    },
+    {
+      "path": "src/native_anchor_bridge_261109_v1/code/infer_system.py",
+      "source_member": "实验A9+原生锚点与桥前证据校准+261109/infer_system.py",
+      "sha256": "21d67147371814f8a32f794e70e12234f2f44eb6653cb324bdc6d96a7db9cd15",
+      "bytes": 3065
+    },
+    {
+      "path": "src/native_anchor_bridge_261109_v1/code/native_model.py",
+      "source_member": "实验A9+原生锚点与桥前证据校准+261109/native_model.py",
+      "sha256": "051c278f436b6c2821ddbce73abd34feea7891e4651ce170d50f416c2361583a",
+      "bytes": 3340
+    },
+    {
+      "path": "src/native_anchor_bridge_261109_v1/code/protocol.json",
+      "source_member": "实验A9+原生锚点与桥前证据校准+261109/protocol.json",
+      "sha256": "32e3816de14e0d0b26a9086bc7aff787e581e7b262c4e038c1bfb74a556ff011",
+      "bytes": 1540
+    },
+    {
+      "path": "src/native_anchor_bridge_261109_v1/code/prune.py",
+      "source_member": "实验A9+原生锚点与桥前证据校准+261109/prune.py",
+      "sha256": "268c152ed0ccccb9f07719abe705bbbed184568e27f279574949d61a90c3eed2",
+      "bytes": 3648
+    },
+    {
+      "path": "src/native_anchor_bridge_261109_v1/code/refit.py",
+      "source_member": "实验A9+原生锚点与桥前证据校准+261109/refit.py",
+      "sha256": "db2799c422e00711c48c2aa596dd45f0b11f532b34382c56b74c42fa814b66c3",
+      "bytes": 6981
+    },
+    {
+      "path": "src/native_anchor_bridge_261109_v1/code/route.py",
+      "source_member": "实验A9+原生锚点与桥前证据校准+261109/route.py",
+      "sha256": "9384e59c3b67225fe636ded0cc3d3f9a2f8ea122bc1e5e65330e9fa0cc175fe3",
+      "bytes": 7474
+    },
+    {
+      "path": "src/native_anchor_bridge_261109_v1/code/spectral_probe.py",
+      "source_member": "实验A9+原生锚点与桥前证据校准+261109/spectral_probe.py",
+      "sha256": "1a3bfd203cc5c5b72e52c1dfc373de3e94d2fae8a5958b6cc553688394e0d2f4",
+      "bytes": 3564
+    },
+    {
+      "path": "src/native_anchor_bridge_261109_v1/code/structure.py",
+      "source_member": "实验A9+原生锚点与桥前证据校准+261109/structure.py",
+      "sha256": "5922e35bd942cf30480ec8d255bff24f83cb64aa92ef7a113fc2894873931491",
+      "bytes": 1598
+    },
+    {
+      "path": "src/visual_evidence_texture_261109_v15/code/evidence.py",
+      "source_member": "实验C8+跨尺度视觉证据与高频门控+261109/evidence.py",
+      "sha256": "9518a6d2e863eae3540170c0f22b4fc86baf4488b9e751d4bee24d0bfd89905c",
+      "bytes": 6575
+    },
+    {
+      "path": "src/visual_evidence_texture_261109_v15/code/final_evidence.py",
+      "source_member": "实验C8+跨尺度视觉证据与高频门控+261109/final_evidence.py",
+      "sha256": "f1601d1b327de7408c8a8991e4f945375559b5f65b819370fcd76533610d53b0",
+      "bytes": 11089
+    },
+    {
+      "path": "src/visual_evidence_texture_261109_v15/code/infer_v15.py",
+      "source_member": "实验C8+跨尺度视觉证据与高频门控+261109/infer_v15.py",
+      "sha256": "45dfc2331b9db872574de79adb21e52e2caeca261c65f406f4bf14a6c52027e8",
+      "bytes": 2795
+    },
+    {
+      "path": "src/visual_evidence_texture_261109_v15/code/phase_protocol.json",
+      "source_member": "实验C8+跨尺度视觉证据与高频门控+261109/phase_protocol.json",
+      "sha256": "38588463fe5c7282fd72d687a4944516391c7bb039f12b6d4a0082f2630199cb",
+      "bytes": 709
+    },
+    {
+      "path": "src/visual_evidence_texture_261109_v15/code/phase_study.py",
+      "source_member": "实验C8+跨尺度视觉证据与高频门控+261109/phase_study.py",
+      "sha256": "24dd0298a9e2d56a1d9021a4cf7cdc63819734b66dd2c57def3b2a05aea98763",
+      "bytes": 8466
+    },
+    {
+      "path": "src/visual_evidence_texture_261109_v15/code/protocol.json",
+      "source_member": "实验C8+跨尺度视觉证据与高频门控+261109/protocol.json",
+      "sha256": "6cb9e0e5a6bcbff70666bf5892a1a58e2f91c204468744ea4fb9a6c2c756a545",
+      "bytes": 1055
+    },
+    {
+      "path": "src/visual_evidence_texture_261109_v15/code/semantic_model.py",
+      "source_member": "实验C8+跨尺度视觉证据与高频门控+261109/semantic_model.py",
+      "sha256": "387d718a4f9e5e0b6744484834b043793737f1e9339c678b8153d79afdb52a46",
+      "bytes": 5199
+    },
+    {
+      "path": "src/visual_evidence_texture_261109_v15/code/semantic_protocol.json",
+      "source_member": "实验C8+跨尺度视觉证据与高频门控+261109/semantic_protocol.json",
+      "sha256": "0e8b1005c59bc9b354abf9f9d57604f99779acaea7e9554659850f043d6187af",
+      "bytes": 940
+    },
+    {
+      "path": "src/visual_evidence_texture_261109_v15/code/semantic_study.py",
+      "source_member": "实验C8+跨尺度视觉证据与高频门控+261109/semantic_study.py",
+      "sha256": "ee0baa45650143781374d43fbbee7581c15975409380fe27dda88e17904ad24d",
+      "bytes": 6984
+    },
+    {
+      "path": "src/visual_evidence_texture_261109_v15/code/visual_study.py",
+      "source_member": "实验C8+跨尺度视觉证据与高频门控+261109/visual_study.py",
+      "sha256": "a0db57e68d0d0fd43c8ee6f93cebf0dc75ea99806c75f161736f5027c181f9b3",
+      "bytes": 8601
+    },
+    {
+      "path": "src/texture_retention_261109_v15/code/balanced.json",
+      "source_member": "实验C7+感知约束与原生细纹恢复+261109/balanced.json",
+      "sha256": "b31ebaaa13bb3b1fd524011841131b7cac6737f87bb9db665a7cd7555df86413",
+      "bytes": 709
+    },
+    {
+      "path": "src/texture_retention_261109_v15/code/balanced.py",
+      "source_member": "实验C7+感知约束与原生细纹恢复+261109/balanced.py",
+      "sha256": "ef3ad73b3caac315af9c1e2d718f381fb264c929fcb6e2111e734e17bffa4c47",
+      "bytes": 7860
+    },
+    {
+      "path": "src/texture_retention_261109_v15/code/gallery.py",
+      "source_member": "实验C7+感知约束与原生细纹恢复+261109/gallery.py",
+      "sha256": "19b693fcc336af79348c34c311e5852b74f8906bd2240df6aa4e702c0c8b8976",
+      "bytes": 5095
+    },
+    {
+      "path": "src/texture_retention_261109_v15/code/pipeline.py",
+      "source_member": "实验C7+感知约束与原生细纹恢复+261109/pipeline.py",
+      "sha256": "59d4d7afa3ab7f09d9ed1b4f682d060b856d11e6921f7466742227c1c1017d8d",
+      "bytes": 1943
+    },
+    {
+      "path": "src/texture_retention_261109_v15/code/protocol.json",
+      "source_member": "实验C7+感知约束与原生细纹恢复+261109/protocol.json",
+      "sha256": "334cff7620bee9ca13d3ba4c1db9c9bba758bf087ad6eca35b18bcd6cd11e544",
+      "bytes": 943
+    },
+    {
+      "path": "src/texture_retention_261109_v15/code/refinement.json",
+      "source_member": "实验C7+感知约束与原生细纹恢复+261109/refinement.json",
+      "sha256": "c5e06707cc239dd5b22a79ca957c24a0f47c481f2841931ceaae6affbf0eea47",
+      "bytes": 495
+    },
+    {
+      "path": "src/texture_retention_261109_v15/code/release_study.py",
+      "source_member": "实验C7+感知约束与原生细纹恢复+261109/release_study.py",
+      "sha256": "fb4248874c44f646b026fe2b3a86d4d1716e4520ae8c650b0449ca0daaa10944",
+      "bytes": 8523
+    },
+    {
+      "path": "src/texture_retention_261109_v15/code/texture.py",
+      "source_member": "实验C7+感知约束与原生细纹恢复+261109/texture.py",
+      "sha256": "222bf4b81ccf59e7e9c71058c58343ce8715b6823e0d3476eb662714ae6c2c45",
+      "bytes": 4538
+    },
+    {
+      "path": "src/texture_retention_261109_v15/code/transfer_check.py",
+      "source_member": "实验C7+感知约束与原生细纹恢复+261109/transfer_check.py",
+      "sha256": "2a50ede9d29b0de482d7fd3aed40207b62229de75ccdc457f0d40e4c459c52fd",
+      "bytes": 2958
+    },
+    {
+      "path": "src/texture_retention_261109_v15/code/upstream.py",
+      "source_member": "实验C7+感知约束与原生细纹恢复+261109/upstream.py",
+      "sha256": "8796a38e69b271d056cf8da3bdf2a9a1f338b8f17e415d33424ca333c5839b12",
+      "bytes": 4544
+    },
+    {
+      "path": "src/texture_retention_261109_v15/code/v15_restore.py",
+      "source_member": "实验C7+感知约束与原生细纹恢复+261109/v15_restore.py",
+      "sha256": "a40803a854491d3d30318d2fd63ab3f630a5d76bf4923e916249399f9bf4429e",
+      "bytes": 1091
+    },
+    {
+      "path": "src/texture_retention_261109_v15/code/v15_study.py",
+      "source_member": "实验C7+感知约束与原生细纹恢复+261109/v15_study.py",
+      "sha256": "306c8f32d9b24a7e5dd2934c118e3db727b8e2bef0d17518bad67658addf2a36",
+      "bytes": 8367
+    },
+    {
+      "path": "src/material_direction_flow_261108_v1/code/detail.py",
+      "source_member": "归档D10+双轨去噪与实拍融合+261108/detail.py",
+      "sha256": "27da41265d84a84f4b507fe599540882df599071008702103127355ff3956595",
+      "bytes": 1562
+    },
+    {
+      "path": "src/material_direction_flow_261108_v1/code/factorial.py",
+      "source_member": "归档D10+双轨去噪与实拍融合+261108/factorial.py",
+      "sha256": "abd50e0fdf834ffa08fba16a744e83253c6ca545870a7d17f66df806f8cd3c39",
+      "bytes": 3668
+    },
+    {
+      "path": "src/material_direction_flow_261108_v1/code/flow.py",
+      "source_member": "归档D10+双轨去噪与实拍融合+261108/flow.py",
+      "sha256": "3e09d142f834e10116bb63e2c11d2e431d4c137a6cabd0ffbe79adc33174ac44",
+      "bytes": 3668
+    },
+    {
+      "path": "src/material_direction_flow_261108_v1/code/mix_protocol.json",
+      "source_member": "归档D10+双轨去噪与实拍融合+261108/mix_protocol.json",
+      "sha256": "8e1b1dde7595f2a0fdc3dc6558bfe2f623edba989bd6c3b6df976cd6e213b3ee",
+      "bytes": 964
+    },
+    {
+      "path": "src/visual_trajectory_mix_261108_v1/code/mix_protocol.json",
+      "source_member": "归档D10+双轨去噪与实拍融合+261108/mix_protocol.json",
+      "sha256": "8e1b1dde7595f2a0fdc3dc6558bfe2f623edba989bd6c3b6df976cd6e213b3ee",
+      "bytes": 964
+    },
+    {
+      "path": "src/material_direction_flow_261108_v1/code/mix_study.py",
+      "source_member": "归档D10+双轨去噪与实拍融合+261108/mix_study.py",
+      "sha256": "90eebd71cba3b6a579b57f1c4c4d31d11ddda99304bad23912fb7e33a07cb98a",
+      "bytes": 7598
+    },
+    {
+      "path": "src/visual_trajectory_mix_261108_v1/code/mix_study.py",
+      "source_member": "归档D10+双轨去噪与实拍融合+261108/mix_study.py",
+      "sha256": "90eebd71cba3b6a579b57f1c4c4d31d11ddda99304bad23912fb7e33a07cb98a",
+      "bytes": 7598
+    },
+    {
+      "path": "src/material_direction_flow_261108_v1/code/pipeline.py",
+      "source_member": "归档D10+双轨去噪与实拍融合+261108/pipeline.py",
+      "sha256": "e0d809f91c79cd70d0b82d4f93ab64f5dace78996bd60feb2e3fb083214ad98b",
+      "bytes": 819
+    },
+    {
+      "path": "src/material_direction_flow_261108_v1/code/protocol.json",
+      "source_member": "归档D10+双轨去噪与实拍融合+261108/protocol.json",
+      "sha256": "d42044041e31cfd68b45dabc0008f6a71c484bb077d0960872a8c6bc2c00472d",
+      "bytes": 1276
+    },
+    {
+      "path": "src/material_direction_flow_261108_v1/code/refine_study.py",
+      "source_member": "归档D10+双轨去噪与实拍融合+261108/refine_study.py",
+      "sha256": "e3b745e999fe8c9f3dbbdeb458e98ed204aab4c96f9321d9b9e2e059ec379258",
+      "bytes": 10146
+    },
+    {
+      "path": "src/material_detail_projection_261108_v1/code/refine_study.py",
+      "source_member": "归档D10+双轨去噪与实拍融合+261108/refine_study.py",
+      "sha256": "e3b745e999fe8c9f3dbbdeb458e98ed204aab4c96f9321d9b9e2e059ec379258",
+      "bytes": 10146
+    },
+    {
+      "path": "src/material_direction_flow_261108_v1/code/refinement.json",
+      "source_member": "归档D10+双轨去噪与实拍融合+261108/refinement.json",
+      "sha256": "ec4ae61b62b72b908ef40364a57ce3c66cf21ca4b18656532c1867f4abe15478",
+      "bytes": 1466
+    },
+    {
+      "path": "src/material_detail_projection_261108_v1/code/refinement.json",
+      "source_member": "归档D10+双轨去噪与实拍融合+261108/refinement.json",
+      "sha256": "ec4ae61b62b72b908ef40364a57ce3c66cf21ca4b18656532c1867f4abe15478",
+      "bytes": 1466
+    },
+    {
+      "path": "src/material_direction_flow_261108_v1/code/restore.py",
+      "source_member": "归档D10+双轨去噪与实拍融合+261108/restore.py",
+      "sha256": "945262ce833c5182153640df544f7448f2de66c36ac570a8afb6207feddf5e4a",
+      "bytes": 1684
+    },
+    {
+      "path": "src/material_direction_flow_261108_v1/code/study.py",
+      "source_member": "归档D10+双轨去噪与实拍融合+261108/study.py",
+      "sha256": "c810a5f4bc4191c395ce139dbbfff74fde72f3fd15e3c62d125a898e5f17930b",
+      "bytes": 9094
+    }
+  ],
+  "imported_top_level_modules": [
+    "PIL",
+    "argparse",
+    "balanced",
+    "bridge_calibrate",
+    "bridge_trial",
+    "cache",
+    "camera",
+    "check_release",
+    "detail",
+    "diagnosis",
+    "evidence",
+    "fcntl",
+    "feedback",
+    "flow",
+    "gallery",
+    "hashlib",
+    "infer_v15",
+    "json",
+    "mix_study",
+    "native_model",
+    "numpy",
+    "os",
+    "pathlib",
+    "phase_study",
+    "prepare",
+    "probe",
+    "pyiqa",
+    "random",
+    "readout",
+    "refine_study",
+    "release_study",
+    "route",
+    "scipy",
+    "semantic_model",
+    "semantic_study",
+    "skimage",
+    "statistics",
+    "structure",
+    "study",
+    "subprocess",
+    "sys",
+    "texture",
+    "time",
+    "torch",
+    "traceback",
+    "upstream",
+    "v15_restore",
+    "v15_study",
+    "visual_study",
+    "workflow",
+    "zipfile"
+  ]
+}

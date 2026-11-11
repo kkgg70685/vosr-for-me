@@ -1,0 +1,25 @@
+{
+  "run": "texture_retention_261109_v15",
+  "train_per_camera": 24,
+  "validation_per_camera": 8,
+  "validation_offset": 15,
+  "train_seeds": [
+    6
+  ],
+  "primary_seed": 6,
+  "repeat_seed": 9,
+  "repeat_real_per_camera": 6,
+  "train_updates": 900,
+  "crop": 96,
+  "train_batch": 6,
+  "validation_strength": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "baseline": "v1.4 fixed/0.5, CFG -0.5, 25 steps",
+  "selection": "Retain candidates with mean PSNR >= v14 - 0.10 dB, mean LPIPS <= v14 and lower HR-referenced texture log-amplitude error. Prefer minimum LPIPS, then texture error; include unmodified v14 as fallback. Validate on RealSR V only.",
+  "confirmation": "All 100 historical RealSR E, 15 DRealSR E; seed 9 sensitivity on 12 RealSR and 15 DRealSR scenes. Bootstrap paired by physical scene. Confirm improvement in LPIPS, HR texture amplitude error, and quantify retained PSNR vs v14 and raw VOSR. No per-image guarantee."
+}

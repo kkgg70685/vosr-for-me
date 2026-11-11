@@ -1,0 +1,4 @@
+* text=auto eol=lf
+# Published source hashes cover exact original bytes, including original line endings.
+src/** -text
+provenance.json -text

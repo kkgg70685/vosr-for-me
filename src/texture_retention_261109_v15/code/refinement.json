@@ -1,0 +1,15 @@
+{
+  "validation": "last seven distinct V scenes per camera after earlier indices 15..22; disjoint from primary selection",
+  "train_updates": 1200,
+  "detail_strengths": [
+    0.75,
+    1,
+    1.25
+  ],
+  "coarse_strengths": [
+    0,
+    0.5,
+    1
+  ],
+  "criterion": "Select minimum validation LPIPS with mean PSNR >= v1.4, LPIPS <= first locked head, and texture error <= first locked head. Fall back to the first locked configuration if empty. No confirmation results used for selection."
+}

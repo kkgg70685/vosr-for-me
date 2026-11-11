@@ -1,0 +1,58 @@
+{
+  "run": "material_direction_flow_261108_v1",
+  "synth_dev": [
+    93000,
+    93001,
+    93002,
+    93003
+  ],
+  "synth_confirm": [
+    94000,
+    94001,
+    94002,
+    94003,
+    94004,
+    94005,
+    94006,
+    94007,
+    94008,
+    94009,
+    94010,
+    94011
+  ],
+  "synth_seeds": [
+    11,
+    19
+  ],
+  "real_dev_per_camera": 3,
+  "real_test": "all 20 historical new20 scenes; seeds 6,7",
+  "strengths": [
+    0.04,
+    0.1,
+    0.2
+  ],
+  "direction_weights": [
+    8,
+    32
+  ],
+  "guided_step_indices": [
+    16,
+    18,
+    20,
+    22,
+    24
+  ],
+  "cfg_synth": 0.5,
+  "cfg_real": -0.5,
+  "methods": [
+    "native",
+    "observation",
+    "local",
+    "visual",
+    "misplaced"
+  ],
+  "selection_synth": "minimize mean orientation error among visual candidates with mean PSNR >= native and boundary <= native + 0.25; otherwise native",
+  "selection_real": "maximize mean validation PSNR among visual candidates with mean LPIPS <= native + 0.005, including native. Lock before testing.",
+  "confirmation": "Average seeds within each physical scene. Paired bootstrap by scene (5000 resamples). Real fusion with the locked v1.3 release is a secondary factorial comparison.",
+  "real_camera_sha": "15f6eab0c6343cbcc00030338bfc93d614f349317b3370791a6e66f7c5cd23e7"
+}

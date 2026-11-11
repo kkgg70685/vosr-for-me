@@ -1,0 +1,19 @@
+{
+  "run": "semantic_readout",
+  "fit": "192 RealSR T scenes; 3 equal-capacity adapters, 900 updates each; project top 16 DINO axes from T only. LR-only, cross-scale LR values, and DINO-conditioned same-image references.",
+  "phase": [
+    0.35,
+    0.65
+  ],
+  "gain": [
+    0.1,
+    0.2,
+    0.3
+  ],
+  "low": [
+    0,
+    0.25
+  ],
+  "selection": "Revisit the phase validation cohort to refine the interval between the previous rejected gain settings 0 and 0.45. Require both camera means PSNR >= base-0.03 dB, LPIPS <= base, lower texture error. Choose minimum LPIPS. Retain reference if no candidate. Fixed nonzero contrasts shared across families.",
+  "confirmation": "100 RealSR E and 15 DRealSR E reused; preregistered seed29 T cohort from each domain and seed37 DRealSR V. Matched controls separate LR-only subpixel prediction, observed LR memory, semantic conditioning, shuffled semantic association and wrong residual values."
+}

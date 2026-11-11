@@ -1,0 +1,5 @@
+{
+  "bridge": "none",
+  "method": "conf",
+  "spec": [0.6, 0.5, "evidence"]
+}

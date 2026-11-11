@@ -1,0 +1,38 @@
+{
+  "run": "native_anchor_bridge_261109_v1",
+  "native_backbone": "VOSR_0.5B_ms",
+  "decoder": "sd21_lwdecoder.pth",
+  "train": {
+    "scenes": 48,
+    "initial_updates": 800,
+    "geometry_weight": 0.16,
+    "refit_updates_per_head": 1200,
+    "control": "same seed, matched patches and base loss",
+    "refit": "match registration, add MSE16 and reduce perceptual coefficient to .6 in fidelity arm"
+  },
+  "selection": {
+    "stage1": "RealSR V16",
+    "routed": "RealSR V24 excluding initial V16",
+    "chosen_recipe": {
+      "coarse": 0.6,
+      "fine_center": 0.5,
+      "mid_center": 0.55,
+      "route": "LR-conditioned signed prediction consistency",
+      "registration": "middle bilinear; fine bicubic only where score improvement >.10 and shift norm >.75px"
+    }
+  },
+  "confirmation": {
+    "historical": "RealSR E100, DRealSR E15 seed6",
+    "additional": "RealSR T12 and DRealSR T12 excluding C7/A8 training and transfer cohorts, seed43",
+    "refit_new": "additional 12+12 T parents, seed61"
+  },
+  "limitations": [
+    "Upstream camera training may include official T parents",
+    "Six display scenes selected in v1.4 and never representative of population",
+    "Additional DRealSR amplitude error increased .0012",
+    "Current shape proxies do not establish exact window or glyph topology",
+    "Spatial route and proposed bridge do not show consistent independent advantage over simplified controls"
+  ],
+  "final_native_bridge": "none",
+  "deployment": "code/infer_system.py"
+}

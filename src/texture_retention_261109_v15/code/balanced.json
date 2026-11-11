@@ -1,0 +1,22 @@
+{
+  "train": "same 48 RealSR T, shared RGB linear least-squares fit to HR minus V1.4; ridge=0.0001",
+  "dev": "first 15 scene IDs in the previously established RealSR V ordering per camera; disjoint from both earlier v1.5 development panels",
+  "fine": [
+    0.25,
+    0.65,
+    1,
+    1.35
+  ],
+  "mid": [
+    0,
+    0.25,
+    0.5,
+    0.75
+  ],
+  "reg": [
+    0,
+    0.5,
+    1
+  ],
+  "criterion": "For each of the two V cameras, require mean PSNR >= V1.4 -0.03 dB, mean LPIPS <= V1.4, mean texture amplitude error <= V1.4. Among eligible choose minimum pooled LPIPS; identity is available. Final comparisons with both prior V1.5 and V1.4. Independent new-seed DRealSR V if available, no DRealSR tuning."
+}

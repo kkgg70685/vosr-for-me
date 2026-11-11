@@ -1,0 +1,53 @@
+{
+  "run": "material_detail_projection_261108_v1",
+  "synth_dev": [
+    95000,
+    95001,
+    95002,
+    95003,
+    95004,
+    95005
+  ],
+  "synth_confirm": [
+    96000,
+    96001,
+    96002,
+    96003,
+    96004,
+    96005,
+    96006,
+    96007,
+    96008,
+    96009,
+    96010,
+    96011,
+    96012,
+    96013,
+    96014,
+    96015
+  ],
+  "seeds": [
+    11,
+    19
+  ],
+  "depths": [
+    0,
+    3,
+    10,
+    24
+  ],
+  "real_dev": "next six distinct validation scenes per camera after the three used for flow selection",
+  "real_confirm": "12 distinct E scenes per camera excluding the prior new20. Rank by SHA256 of scene_id.",
+  "real_seeds": [
+    6,
+    7
+  ],
+  "synth_selection": "Among visual proposals with mean PSNR at least native and boundary no worse than native +0.25 pick minimum leakage. Compare raw flow, exact block observation only, local and misplaced directional ablations.",
+  "real_selection": "Choose one source and diffusion depth on 12 validation parents by maximum mean PSNR subject to LPIPS <= published native_camera +0.002. The published model at depth zero is eligible. Freeze for RealSR and DRealSR evaluation.",
+  "real_sources": [
+    "native_camera",
+    "visual_camera",
+    "visual"
+  ],
+  "real_eval": "Publish validation-selected pipeline, compare previous release, visual flow, selected source with zero detail steps, local and misplaced at matched depth; external 15 historical DRealSR E scenes seed 6 without retuning."
+}

@@ -1,0 +1,23 @@
+{
+  "run": "visual_trajectory_mix_261108_v1",
+  "scale_grid": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "adaptive_centers": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "ridge": 0.0001,
+  "window": 5,
+  "seed": 6,
+  "validation": "6 scenes per camera at offsets 9..14 of scene-deduplicated sorted RealSR V",
+  "confirmation": "all RealSR E except the first 20 and subsequent 24; DRealSR E reused transfer",
+  "selection": "highest development mean PSNR among candidates whose LPIPS is within 0.002 of the better endpoint and within 0.001 of old v1.3 (if empty, minimum LPIPS). Fit on validation separately within fixed, local and visual families; then choose overall. Shifted visual control uses locked visual center.",
+  "comparison": "Two frozen trajectories share first 16 flow steps and initial noise. Both use v1.3 decoding and 24 within-block steps. Include prior v1.3 raw.",
+  "real_presets": "Keep prior locked configurations independently accessible."
+}
