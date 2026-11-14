@@ -2,9 +2,16 @@
 import hashlib
 import importlib.util
 import json
+import os
 from pathlib import Path
 import sys
 import torch
+
+
+def resolve_runtime_root(root=None):
+    value=root or os.environ.get('VOSR_RUNTIME_ROOT')
+    if not value:raise ValueError('Pass --runtime-root or set VOSR_RUNTIME_ROOT to the retained asset directory')
+    return Path(value)
 
 
 def load_file(path, name):
@@ -20,7 +27,7 @@ def load_file(path, name):
 
 
 def load_camera(root, device):
-    root = Path(root)
+    root = resolve_runtime_root(root)
     asset = root / "camera_feedback_261108_v1/real_camera_adapter.pt"
     protocol = Path(__file__).parents[1] / "material_direction_flow_261108_v1/code/protocol.json"
     expected = json.loads(protocol.read_text())["real_camera_sha"]
@@ -33,11 +40,14 @@ def load_camera(root, device):
 
 
 def load_base(root):
+    root = resolve_runtime_root(root)
     if not torch.cuda.is_available():
         raise RuntimeError("Frozen VOSR requires the existing CUDA server environment")
     module = load_file(Path(root) / "visual_region_condition_261108_v1/code/probe.py", "v25_probe")
     base = module.FrozenVOSR()
     base.use_checkpoint = False
+    if isinstance(base, torch.nn.Module):
+        base.eval().requires_grad_(False)
     for value in vars(base).values():
         if isinstance(value, torch.nn.Module):
             value.eval().requires_grad_(False)
@@ -52,7 +62,7 @@ def generate_native(base, lr, seed=6, steps=25, guidance=-.5):
     """Same Euler/CFG convention as v2 native, one trajectory and one decode."""
     cond, sem, _ = base.conditions(lr)
     generator = torch.Generator(device=lr.device).manual_seed(seed)
-    z = torch.randn(cond.shape, device=lr.device, generator=generator)
+    z = torch.randn(cond.shape, device=lr.device, dtype=cond.dtype, generator=generator)
     times = torch.linspace(1, 0, steps + 1, device=lr.device)
     for t, end in zip(times[:-1], times[1:]):
         full = base.velocity(cond, z, t[None], sem)

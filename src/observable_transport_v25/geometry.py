@@ -60,6 +60,7 @@ def jacobian_determinant(d):
     return (1 + dx[:, 0]) * (1 + dy[:, 1]) - dy[:, 0] * dx[:, 1]
 
 
-def inverse_error(v, steps=6):
-    d, inv = integrate(v, steps), integrate(-v, steps)
+def inverse_error(v, steps=6, backward=None):
+    d = integrate(v, steps) if backward is None else backward
+    inv = integrate(-v, steps)
     return (d + sample(inv, d)).square().sum(1).mean().sqrt()

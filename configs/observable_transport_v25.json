@@ -1,5 +1,5 @@
 {
-  "protocol": "V25-OBSERVABLE-TRANSPORT-20261113-R0",
+  "protocol": "V25-OBSERVABLE-TRANSPORT-20261114-R1",
   "status": "prototype_not_performance_validated",
   "seed": 6,
   "model": {
@@ -17,7 +17,9 @@
     "max_inverse_error": 0.1,
     "lr_margin": 3,
     "profile_color": true,
-    "spectral_filter": true
+    "spectral_filter": true,
+    "gain_min": 0.5,
+    "gain_max": 2.0
   },
   "controls": [
     "native",
@@ -46,7 +48,18 @@
   ],
   "inference_reference": "LR_and_native_only",
   "manual_annotations": false,
-  "server_outputs": "/home/zhangxu/hx/HX001/observable_transport_v25_261113/runs",
+  "server_outputs": "${VOSR_RUNTIME_ROOT}/observable_transport_v25_261113/runs",
   "baseline_main_sha": "5b116bd5f8f998f708c3b265f822b52a40cb668a",
-  "v2_reference_sha": "98dbab639c05d295c7d909bea7a2870fa310b62b"
+  "v2_reference_sha": "98dbab639c05d295c7d909bea7a2870fa310b62b",
+  "evaluation": {
+    "min_test_parents": 32,
+    "seed": 6,
+    "iqa_required_for_test": [
+      "LPIPS",
+      "DISTS"
+    ],
+    "HF_filter": "RGB minus binomial5 lowpass",
+    "HF_display_gain": 4,
+    "metric_image_range": "float clipped [0,1]; raw_PSNR also retained"
+  }
 }

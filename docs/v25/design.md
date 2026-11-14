@@ -88,16 +88,16 @@ $$
 
 ### 5.2 可变投影、Schur 补与颜色干扰
 
-成像残差中，每通道允许增益和偏置；它们只用于观测比较，不改变最终输出 RGB。固定有效 LR 裁边后，构造每通道两列的设计矩阵。
+成像残差中，每通道允许有界正增益和偏置；它们只用于观测比较，不改变最终输出 RGB。2026-11-14 审计修复了无约束拟合可用负增益解释反相纹理的问题。R1 固定增益范围为 [0.5,2]，先消均值再求带盒约束的一维最小二乘。
 
 $$
-p(a)=A(x_a),\qquad C_c(a)=[p_c(a),\mathbf{1}],
+p(a)=A(x_a),\qquad \tilde p_c=p_c-\bar p_c,\quad \tilde y_c=y_c-\bar y_c,
 $$
 $$
-\beta_c^*(a)=C_c(a)^+y_c,\qquad r_c(a)=C_c(a)\beta_c^*(a)-y_c.
+g_c^*(a)=\operatorname{clip}_{[0.5,2]}\frac{\langle\tilde p_c,\tilde y_c\rangle}{\langle\tilde p_c,\tilde p_c\rangle},\qquad r_c(a)=g_c^*(a)\tilde p_c-\tilde y_c.
 $$
 
-`+` 表示 Moore–Penrose 广义逆，代码使用秩容忍 SVD 伪逆。各候选都按同一个参数化重新拟合，这是可变投影的 profile objective，不是 v2 的共同前景代理。其代价是增益/偏置可能吸收部分几何证据。
+预测通道近常量时令增益为1，避免零除。各候选都按同一个约束重新拟合，这是带盒约束的 profile objective。其代价仍是增益/偏置可能吸收部分几何证据；正增益并未解决相机失配。下面的无约束 Schur 补只是局部内部解的解释，增益触界时应按活跃约束理解，不能直接套用无约束投影。
 
 在局部线性模型中，将几何 Jacobian Jg 与干扰 Jacobian Jn 联立，再消去干扰，得到：
 

@@ -28,6 +28,8 @@ class Config:
     lr_margin: int = 3
     profile_color: bool = True
     spectral_filter: bool = True
+    gain_min: float = .5
+    gain_max: float = 2.
 
     def __post_init__(self):
         if any(not math.isfinite(float(v)) for v in asdict(self).values()):
@@ -40,6 +42,8 @@ class Config:
             raise ValueError("Positive numerical scales required")
         if not 0 < self.min_jacobian < 1:
             raise ValueError("Jacobian floor must lie in (0,1)")
+        if not 0 < self.gain_min <= 1 <= self.gain_max:
+            raise ValueError("Photometric gains must be positive and include identity")
 
 
 class AreaCamera:
@@ -51,8 +55,8 @@ class AreaCamera:
         return F.avg_pool2d(image, self.scale)
 
 
-def profiled_residual(prediction, target, enabled=True):
-    """Eliminate RGB gain/bias with stable rank-aware pseudoinverse.
+def profiled_residual(prediction, target, enabled=True, gain_min=.5, gain_max=2.):
+    """Eliminate bias and bounded positive RGB gain by centered regression.
 
     Photometric corrections affect the likelihood only, never the output image.
     Finite differences of this residual include the nuisance refit derivative.
@@ -60,12 +64,11 @@ def profiled_residual(prediction, target, enabled=True):
     if not enabled:
         return (prediction - target).flatten()
     p, y = prediction.reshape(3, -1), target.reshape(3, -1)
-    residual = []
-    for channel in range(3):
-        design = torch.stack((p[channel], torch.ones_like(p[channel])), -1)
-        fit = torch.linalg.pinv(design, rtol=1e-5) @ y[channel]
-        residual.append(design @ fit - y[channel])
-    return torch.cat(residual)
+    pc, yc = p-p.mean(1, keepdim=True), y-y.mean(1, keepdim=True)
+    variance = pc.square().mean(1, keepdim=True)
+    gain = ((pc*yc).mean(1, keepdim=True)/variance.clamp_min(1e-12)).clamp(gain_min, gain_max)
+    gain = torch.where(variance > 1e-12, gain, torch.ones_like(gain))
+    return (gain*pc-yc).flatten()
 
 
 class ObservableTransport:
@@ -75,7 +78,7 @@ class ObservableTransport:
     @torch.no_grad()
     def restore(self, lr, native):
         c = self.config
-        if lr.ndim != 4 or lr.shape[:2] != (1, 3) or native.shape[:2] != (1, 3):
+        if lr.ndim != 4 or native.ndim != 4 or lr.shape[:2] != (1, 3) or native.shape[:2] != (1, 3):
             raise ValueError("Single-image RGB tensors required")
         if native.shape[-2:] != tuple(c.scale * d for d in lr.shape[-2:]):
             raise ValueError("LR/native scale mismatch")
@@ -93,11 +96,14 @@ class ObservableTransport:
         def render(coeff):
             return transport(native, field(coeff, basis), c.integration_steps)
 
-        def residual(coeff):
-            prediction = self.camera(render(coeff)[0])
+        def image_residual(image):
+            prediction = self.camera(image)
             if prediction.shape != lr.shape or not bool(torch.isfinite(prediction).all()):
                 raise ValueError("Camera must return finite RGB at the LR shape")
-            return profiled_residual(prediction[..., m:-m, m:-m], y, c.profile_color)
+            return profiled_residual(prediction[..., m:-m, m:-m], y, c.profile_color, c.gain_min, c.gain_max)
+
+        def residual(coeff):
+            return image_residual(render(coeff)[0])
 
         r = residual(a)
         initial_loss = loss = float(r.square().mean())
@@ -129,9 +135,10 @@ class ObservableTransport:
                 revised, d = render(proposal)
                 det = jacobian_determinant(d)
                 motion = float(v.square().sum(1).sqrt().max())
-                inv = float(inverse_error(v, c.integration_steps))
-                rr = residual(proposal)
+                inv = float(inverse_error(v, c.integration_steps, backward=d))
+                rr = image_residual(revised)
                 trial = float(rr.square().mean())
+                record.setdefault('trials', []).append(dict(rate=rate, loss=trial, min_jacobian=float(det.min()), inverse_error=inv, peak_motion=motion))
                 record.update(trial_loss=trial, min_jacobian=float(det.min()),
                               inverse_error=inv, peak_motion=motion)
                 safe = motion <= c.max_motion and float(det.min()) >= c.min_jacobian and inv <= c.max_inverse_error

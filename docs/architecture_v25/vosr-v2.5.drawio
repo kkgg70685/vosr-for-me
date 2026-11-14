@@ -157,7 +157,7 @@
         <mxCell id="camera" parent="1" vertex="1" value="Frozen camera A&#10;same operator for all trials" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#edf0f4;strokeColor=#778495;strokeWidth=2;fontFamily=Arial;fontSize=18;spacing=14;">
           <mxGeometry as="geometry" x="1130" y="450" width="280" height="120" />
         </mxCell>
-        <mxCell id="profile" parent="1" vertex="1" value="Profile RGB gain / bias&#10;r(a) = C(a) C(a)+ y - y&#10;fixed valid observation crop" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e6f0fc;strokeColor=#5283b5;strokeWidth=2;fontFamily=Arial;fontSize=18;spacing=14;">
+        <mxCell id="profile" parent="1" vertex="1" value="Bounded RGB gain / bias&#10;positive gain: 0.5 to 2.0&#10;centered residual; fixed crop" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e6f0fc;strokeColor=#5283b5;strokeWidth=2;fontFamily=Arial;fontSize=18;spacing=14;">
           <mxGeometry as="geometry" x="680" y="440" width="340" height="140" />
         </mxCell>
         <mxCell id="svd" parent="1" vertex="1" value="Finite-difference Jacobian&#10;J = U diag(s) V^T&#10;retain s * delta &gt; sigma" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e6f0fc;strokeColor=#5283b5;strokeWidth=2;fontFamily=Arial;fontSize=18;spacing=14;">

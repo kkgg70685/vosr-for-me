@@ -39,6 +39,9 @@ def homography_corner_error(estimated, reference, height, width):
     """Mean 4-corner reprojection distance, in HR pixels; failed fits are inf."""
     if estimated is None:
         return float("inf")
+    estimated = np.asarray(estimated, dtype=float)
+    if estimated.shape != (3,3) or not np.isfinite(estimated).all() or np.linalg.matrix_rank(estimated) < 3:
+        return float("inf")
     pts = np.array([[0, 0, 1], [width-1, 0, 1], [width-1, height-1, 1], [0, height-1, 1]]).T
     warped = []
     for h in (estimated, reference):

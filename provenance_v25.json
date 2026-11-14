@@ -1,10 +1,10 @@
 {
-  "version": "2.5.0-prototype",
+  "version": "2.5.1-audit",
   "base_main": "5b116bd5f8f998f708c3b265f822b52a40cb668a",
   "files": [
     {
       "path": "configs/observable_transport_v25.json",
-      "sha256": "730e10d41c5fbfd5083c52c19a6bbc720b65a54c8368607ca5fc593991ce7b68"
+      "sha256": "bd186f2b2d61d2e7d6e875b52a7ffae70e36d063074b6a3bb95c2bc0858fd713"
     },
     {
       "path": "docs/architecture_v25/01-model.svg",
@@ -12,7 +12,7 @@
     },
     {
       "path": "docs/architecture_v25/02-solver.svg",
-      "sha256": "aaa25819fb4b18619efbb42470dd776db5a700cd344c5b20e250796813eacf91"
+      "sha256": "37e5e59d5377f6d5d3c33fe1f5dc3b1c1a79f3c2ab23aeecd16ad709cdc2d581"
     },
     {
       "path": "docs/architecture_v25/03-evaluation.svg",
@@ -24,39 +24,55 @@
     },
     {
       "path": "docs/architecture_v25/vosr-v2.5.drawio",
-      "sha256": "7c92032a87aaac3a8e11b996f5ae936d1b6c0d99f82494ff05f5196a7ccce1a5"
+      "sha256": "09e22c2fb23d18132f954341725a304a1882099121dc00283d159700a122b4f6"
+    },
+    {
+      "path": "docs/v25/audit.md",
+      "sha256": "cee4c163bf6061c3ff277947ccd498a8f3475cab35514801d891f834985740b1"
     },
     {
       "path": "docs/v25/design.md",
-      "sha256": "0754447c86d8a8c4b4154f64c7d0e5caafa31c136144c05e904ce81cda2a7464"
+      "sha256": "2d2f28b88daf2d4938bfcf9e2a168667f636b0feaba68414150a71a66ac2be7a"
     },
     {
       "path": "docs/v25/evaluation.md",
-      "sha256": "dd8a48b7ead582c5ccbfc86327e156d9b32b9816f161b82ebfb59cccfc03a53a"
+      "sha256": "e6f784ba8e4cbb000a57258ed88f4d78f292514e1ea26b737b1623d4abbe10ac"
+    },
+    {
+      "path": "docs/v25/formal_experiment.md",
+      "sha256": "cc654ed7952e5c787ed18c9042913edde299703865995363b434f46d6a4052aa"
     },
     {
       "path": "docs/v25/README.md",
-      "sha256": "a69c679f9e9cd7805b453c75d5ca9a7e6e2d5e5f9bac47af37600660660a4fc3"
+      "sha256": "4aac26de794b63017e04aec843bd7ab373157c7eed1bb7e71aecd7ee4e79e1f4"
     },
     {
       "path": "docs/v25/validation.md",
-      "sha256": "f1e94badef8cf123b32e2046919cd3c5af99c95cb6a45da2c0da4a92ee512d84"
+      "sha256": "cea2034806f0a1f7a9650b5ca8b1d456208e1762dd128e5d749be2043aa8011b"
     },
     {
       "path": "src/observable_transport_v25/__init__.py",
-      "sha256": "eba912740f1c076c0b8a80079c4039bef9e57402da17c566f2086b8eb73507a1"
+      "sha256": "c2c652fd1c8fcfdee6955adea097dc99cbf8f0464222819881ecdcf4f69482c5"
+    },
+    {
+      "path": "src/observable_transport_v25/artifacts.py",
+      "sha256": "9bf3175e98a8bb41a409458f8c623377bd4399415899c2e3391fe139c338f22a"
+    },
+    {
+      "path": "src/observable_transport_v25/benchmark.py",
+      "sha256": "afe242b2012726fbe8fdd30c650f1863462c870fd35dcb2627dc1723fdc02059"
     },
     {
       "path": "src/observable_transport_v25/evaluate.py",
-      "sha256": "affa60c7471313f6d92289e4c2739f183250ef2d8f177f5040b3bd625e54142a"
+      "sha256": "d864e9a2c80afcdb999fe349862d815e6c581b4f0646c9eefb24a659cf00be89"
     },
     {
       "path": "src/observable_transport_v25/geometry.py",
-      "sha256": "aa397801875f4c5625ac3afd393da5fed884703cf55840ac3f3116e6e715f4cd"
+      "sha256": "7fdec095b5d32e860086d2c055034ff5948c19f94b7df00a3db071b9dbc33fd3"
     },
     {
       "path": "src/observable_transport_v25/infer.py",
-      "sha256": "dd9c540051273330e9db81236604fd4529adcc4c62c8a05826bbd456b444436c"
+      "sha256": "24974902d17df6ef3abfc30a3ff9ae8291b1bcf7dcc05945230f19f83f00f10a"
     },
     {
       "path": "src/observable_transport_v25/matching.py",
@@ -64,15 +80,19 @@
     },
     {
       "path": "src/observable_transport_v25/metrics.py",
-      "sha256": "ca62e91d8b1aceac8c4afa6846e1d9bb05753d2902d567feb9df3ff152cda4ac"
+      "sha256": "b4246bb7cdb941888ecdf9dbd9d4d550be16e6fc1930490b8e108107b520f30e"
     },
     {
       "path": "src/observable_transport_v25/model.py",
-      "sha256": "6ee7134da9df770ae6fc04f5c69dd96e93c19d73f6fed654721649682a761322"
+      "sha256": "d45fc1e727e8acd2a2b63e904215d96c7a08456b3e320f595bdc33caf30fc0cb"
+    },
+    {
+      "path": "src/observable_transport_v25/prepare.py",
+      "sha256": "459ffe7c8fdb01476715272eeef2ad0bb7f443b9309f2630dce0b21a3361ddfd"
     },
     {
       "path": "src/observable_transport_v25/README.md",
-      "sha256": "526243a1c4a4a7bc9ad84a41d991be34212facc17593fb43b4c4b254ae48b344"
+      "sha256": "19f206aff8a5d713a9addbdfebe511d85aa1d9152c4891965537307a7675ef21"
     },
     {
       "path": "src/observable_transport_v25/requirements.txt",
@@ -80,11 +100,15 @@
     },
     {
       "path": "src/observable_transport_v25/runtime.py",
-      "sha256": "104b6499e0b406a8aed05c045f9d58b59b6b8bd0bcb5a8aacc92d90e562699fc"
+      "sha256": "a03a628897b9b0fa0fbe9dcf4ce69d8f2990b247b16f18902ca270b91fca3f70"
     },
     {
       "path": "tests/test_observable_transport_v25.py",
       "sha256": "72730f47104921eda38b6661e23d3131743c54bd6f234490aeb544296d45fdcc"
+    },
+    {
+      "path": "tests/test_v25_audit.py",
+      "sha256": "f26a65b84106570e9267491a384a78b7d9a58fe62dd3149b925989575c06d36d"
     },
     {
       "path": "tests/test_v25_evaluation.py",
@@ -92,7 +116,7 @@
     },
     {
       "path": "tools/draw_v25.py",
-      "sha256": "e77819c1f6d6b44f464271d152f612984c85a0b0a70f11c4286c6380a33923ad"
+      "sha256": "cd73b1cfa6c879b88a5c5301b3ca12f6672834536ea263974b81cd5ea9e38406"
     },
     {
       "path": "tools/render_v25_preview.py",
@@ -100,7 +124,7 @@
     },
     {
       "path": "tools/verify_v25.py",
-      "sha256": "61cf0235201e66d009d8fcdcaa11e7ab13ce65bf60f684456557bcb21231762b"
+      "sha256": "ec58a6a17c0083d1b50ad8752c6d5d6b469bb1612691d4af352be20d4b3c4980"
     }
   ]
 }

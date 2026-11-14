@@ -1,8 +1,8 @@
 # VOSR for me
 
-本分支新增 **v2.5 可观测连续输运原型**：冻结 VOSR 生成 + RGB 观测约束下的连续坐标求解。已完成源码和 12 项 CPU 测试，尚无真实 CUDA/自然图增量结论。
+本分支新增 **v2.5 可观测连续输运原型**：冻结 VOSR 生成 + RGB 观测约束下的连续坐标求解。20 项测试及真实 CUDA 冒烟通过；自然图存在不动作，构造视图感知改善而匹配 AUC 略降，尚无独立确认收益。
 
-[模型与运行](src/observable_transport_v25/README.md) · [研究设计与数学](docs/v25/design.md) · [固定评价协议](docs/v25/evaluation.md) · [三页 draw.io](docs/architecture_v25/vosr-v2.5.drawio) · [实际验证状态](docs/v25/validation.md)
+[模型与运行](src/observable_transport_v25/README.md) · [研究设计与数学](docs/v25/design.md) · [固定评价协议](docs/v25/evaluation.md) · [三页 draw.io](docs/architecture_v25/vosr-v2.5.drawio) · [实际验证状态](docs/v25/validation.md) · [审计与实测](docs/v25/audit.md) · [正式实验与伪代码](docs/v25/formal_experiment.md)
 
 分支直接从 main `5b116bd` 创建；下述 v1.5 来源保持原样。
 
@@ -35,13 +35,13 @@
 
 ## 在既有发布环境运行
 
-当前代码保留原服务器根目录 `/home/zhangxu/hx/HX001` 和模块加载方式。`src/` 对应该根目录下的源码布局。本仓库是源码同步，需要既有冻结运行环境和发布资产；权重、数据集、特征缓存与完整实验结果保留服务器。
+当前代码保留原服务器根目录 `<RUNTIME_ROOT>` 和模块加载方式。`src/` 对应该根目录下的源码布局。本仓库是源码同步，需要既有冻结运行环境和发布资产；权重、数据集、特征缓存与完整实验结果保留服务器。
 
 在已部署 v1.5 环境执行：
 
 ```bash
-cd /home/zhangxu/hx/HX001/native_anchor_bridge_261109_v1
-/home/zhangxu/hx/HX001/.venv/bin/python code/infer_system.py \
+cd <RUNTIME_ROOT>/native_anchor_bridge_261109_v1
+<RUNTIME_ROOT>/.venv/bin/python code/infer_system.py \
   --input /path/to/lr.png --output /path/to/sr.png --seed 6
 ```
 

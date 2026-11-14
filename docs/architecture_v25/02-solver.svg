@@ -40,9 +40,9 @@
 <text x="1270.0" y="496.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Frozen camera A</text>
 <text x="1270.0" y="524.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">same operator for all trials</text>
 <rect x="680" y="440" width="340" height="140" rx="12" fill="#e6f0fc" stroke="#5283b5" stroke-width="2"/>
-<text x="850.0" y="482.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Profile RGB gain / bias</text>
-<text x="850.0" y="510.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">r(a) = C(a) C(a)+ y - y</text>
-<text x="850.0" y="538.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">fixed valid observation crop</text>
+<text x="850.0" y="482.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Bounded RGB gain / bias</text>
+<text x="850.0" y="510.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">positive gain: 0.5 to 2.0</text>
+<text x="850.0" y="538.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">centered residual; fixed crop</text>
 <rect x="330" y="440" width="260" height="140" rx="12" fill="#e6f0fc" stroke="#5283b5" stroke-width="2"/>
 <text x="460.0" y="482.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Finite-difference Jacobian</text>
 <text x="460.0" y="510.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">J = U diag(s) V^T</text>
