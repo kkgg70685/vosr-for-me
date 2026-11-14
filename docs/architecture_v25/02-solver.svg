@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="1000" viewBox="0 0 1560 1000">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#596779"/></marker></defs>
+<rect width="1560" height="1000" fill="white"/>
+<text x="780.0" y="52.5" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="30" fill="#263648">From RGB evidence to an executable coordinate map</text>
+<text x="780.0" y="107.5" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="17" fill="#667587">model.py + geometry.py | Fixed 3 iterations; four backtracking rates; no learned residual adapter</text>
+<polyline points="250,270.0 330,270.0" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<polyline points="590,270.0 680,270.0" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<text x="635.0" y="258.0" text-anchor="middle" font-family="Arial" font-size="14" fill="#596779" stroke="white" stroke-width="5" paint-order="stroke">HR units</text>
+<polyline points="1020,270.0 1130,270.0" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<text x="1075.0" y="258.0" text-anchor="middle" font-family="Arial" font-size="14" fill="#596779" stroke="white" stroke-width="5" paint-order="stroke">backward map</text>
+<polyline points="1270.0,320 1270.0,450" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<polyline points="1130,510.0 1020,510.0" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<text x="1075.0" y="498.0" text-anchor="middle" font-family="Arial" font-size="14" fill="#596779" stroke="white" stroke-width="5" paint-order="stroke">prediction + LR</text>
+<polyline points="680,510.0 590,510.0" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<text x="635.0" y="498.0" text-anchor="middle" font-family="Arial" font-size="14" fill="#596779" stroke="white" stroke-width="5" paint-order="stroke">r(a)</text>
+<polyline points="330,510.0 270,510.0" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<text x="300.0" y="498.0" text-anchor="middle" font-family="Arial" font-size="14" fill="#596779" stroke="white" stroke-width="5" paint-order="stroke">modes</text>
+<polyline points="165.0,580 165.0,710" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<text x="165.0" y="633.0" text-anchor="middle" font-family="Arial" font-size="14" fill="#596779" stroke="white" stroke-width="5" paint-order="stroke">trial</text>
+<polyline points="260,770.0 350,770.0" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<text x="305.0" y="758.0" text-anchor="middle" font-family="Arial" font-size="14" fill="#596779" stroke="white" stroke-width="5" paint-order="stroke">decision</text>
+<polyline points="530.0,830 530,890 30,890 30,365 155,365 155.0,320" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<text x="280.0" y="878.0" text-anchor="middle" font-family="Arial" font-size="14" fill="#596779" stroke="white" stroke-width="5" paint-order="stroke">next iteration</text>
+<ellipse cx="155.0" cy="270.0" rx="95.0" ry="50.0" fill="#e6f0fc" stroke="#5283b5" stroke-width="2"/>
+<text x="155.0" y="256.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Coefficients a</text>
+<text x="155.0" y="284.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">18 floats</text>
+<rect x="330" y="200" width="260" height="140" rx="0" fill="#e6f3eb" stroke="#4b9270" stroke-width="2"/>
+<path d="M 330 214 H 576 V 340 M 576 214 L 590 200" fill="none" stroke="#4b9270"/>
+<text x="460.0" y="242.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Smooth whole-image basis</text>
+<text x="460.0" y="270.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">3 x 3 cosine modes / axis</text>
+<text x="460.0" y="298.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">v = B a</text>
+<rect x="680" y="200" width="340" height="140" rx="12" fill="#e6f3eb" stroke="#4b9270" stroke-width="2"/>
+<text x="850.0" y="242.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Backward flow integration</text>
+<text x="850.0" y="270.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">d0 = -v / 64</text>
+<text x="850.0" y="298.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">d &lt;- d + sample(d,d), 6 times</text>
+<rect x="1130" y="220" width="280" height="100" rx="12" fill="#e6f3eb" stroke="#4b9270" stroke-width="2"/>
+<text x="1270.0" y="256.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">RGB resampling</text>
+<text x="1270.0" y="284.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">x(a) = x0(p + d)</text>
+<rect x="1130" y="450" width="280" height="120" rx="12" fill="#edf0f4" stroke="#778495" stroke-width="2"/>
+<text x="1270.0" y="496.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Frozen camera A</text>
+<text x="1270.0" y="524.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">same operator for all trials</text>
+<rect x="680" y="440" width="340" height="140" rx="12" fill="#e6f0fc" stroke="#5283b5" stroke-width="2"/>
+<text x="850.0" y="482.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Profile RGB gain / bias</text>
+<text x="850.0" y="510.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">r(a) = C(a) C(a)+ y - y</text>
+<text x="850.0" y="538.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">fixed valid observation crop</text>
+<rect x="330" y="440" width="260" height="140" rx="12" fill="#e6f0fc" stroke="#5283b5" stroke-width="2"/>
+<text x="460.0" y="482.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Finite-difference Jacobian</text>
+<text x="460.0" y="510.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">J = U diag(s) V^T</text>
+<text x="460.0" y="538.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">retain s * delta &gt; sigma</text>
+<rect x="60" y="440" width="210" height="140" rx="12" fill="#fff0dc" stroke="#bf8b47" stroke-width="2"/>
+<text x="165.0" y="482.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Damped step</text>
+<text x="165.0" y="510.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">cap motion</text>
+<text x="165.0" y="538.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">fixed line search</text>
+<polygon points="165.0,710 260,770.0 165.0,830 70,770.0" fill="#fff0dc" stroke="#bf8b47" stroke-width="2"/>
+<text x="165.0" y="770.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Safe descent?</text>
+<rect x="350" y="710" width="360" height="120" rx="12" fill="#e6f3eb" stroke="#4b9270" stroke-width="2"/>
+<text x="530.0" y="756.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Accept / retain current a</text>
+<text x="530.0" y="784.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">rank = 0 at start -&gt; native</text>
+<rect x="860" y="710" width="550" height="120" rx="0" fill="#edf0f4" stroke="#778495" stroke-width="2"/>
+<text x="1135.0" y="742.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Sensitivity is not probability</text>
+<text x="1135.0" y="770.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Jacobian &gt; 0 is a discrete check</text>
+<text x="1135.0" y="798.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">LR descent is not HR truth</text>
+<text x="780.0" y="960.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="15" fill="#667587">Finite difference = 0.125 HR px    |    Default resolution = 0.25 HR px    |    All coefficients float; zero command is exact identity</text>
+</svg>

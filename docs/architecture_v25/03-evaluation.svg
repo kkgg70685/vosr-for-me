@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="1000" viewBox="0 0 1560 1000">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#596779"/></marker></defs>
+<rect width="1560" height="1000" fill="white"/>
+<text x="780.0" y="52.5" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="30" fill="#263648">Does super-resolution help geometric correspondence?</text>
+<text x="780.0" y="107.5" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="17" fill="#667587">Implemented planar benchmark + explicit route toward 3D | One generation seed; no manual blind scoring</text>
+<polyline points="320,280.0 420,280.0" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<polyline points="750,280.0 870,280.0" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<polyline points="1130,280.0 1250,280.0" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<polyline points="1365.0,340 1300.0,470" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<text x="1332.5" y="393.0" text-anchor="middle" font-family="Arial" font-size="14" fill="#596779" stroke="white" stroke-width="5" paint-order="stroke">cached native pair</text>
+<polyline points="1120,545.0 1000,545.0" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<polyline points="620,545.0 510,545.0" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<text x="565.0" y="533.0" text-anchor="middle" font-family="Arial" font-size="14" fill="#596779" stroke="white" stroke-width="5" paint-order="stroke">estimated H</text>
+<polyline points="585.0,360 585,410 285,410 285.0,470" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<text x="435.0" y="398.0" text-anchor="middle" font-family="Arial" font-size="14" fill="#596779" stroke="white" stroke-width="5" paint-order="stroke">H is evaluation-only</text>
+<polyline points="1300.0,620 1290.0,750" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<text x="1295.0" y="673.0" text-anchor="middle" font-family="Arial" font-size="14" fill="#596779" stroke="white" stroke-width="5" paint-order="stroke">paired quality</text>
+<polyline points="285.0,620 335.0,750" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<text x="310.0" y="673.0" text-anchor="middle" font-family="Arial" font-size="14" fill="#596779" stroke="white" stroke-width="5" paint-order="stroke">planned; not yet implemented</text>
+<rect x="60" y="220" width="260" height="120" rx="0" fill="#edf0f4" stroke="#778495" stroke-width="2"/>
+<text x="190.0" y="266.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Server-side source images</text>
+<text x="190.0" y="294.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">physical parent identity</text>
+<polygon points="438,200 750,200 732,360 420,360" fill="#e6f0fc" stroke="#5283b5" stroke-width="2"/>
+<text x="585.0" y="252.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Two views + known homography</text>
+<text x="585.0" y="280.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">automatically defined reference</text>
+<text x="585.0" y="308.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">warp HR before degradation</text>
+<rect x="870" y="220" width="260" height="120" rx="12" fill="#edf0f4" stroke="#778495" stroke-width="2"/>
+<text x="1000.0" y="266.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Same camera degradation</text>
+<text x="1000.0" y="294.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">LR pair</text>
+<rect x="1250" y="220" width="230" height="120" rx="12" fill="#f8e6ee" stroke="#b87394" stroke-width="2"/>
+<text x="1365.0" y="266.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Frozen VOSR</text>
+<text x="1365.0" y="294.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">seed = 6</text>
+<rect x="1120" y="470" width="360" height="150" rx="12" fill="#e6f3eb" stroke="#4b9270" stroke-width="2"/>
+<text x="1300.0" y="517.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Paired methods</text>
+<text x="1300.0" y="545.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">native | translation only</text>
+<text x="1300.0" y="573.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">smooth unfiltered | full v2.5</text>
+<rect x="620" y="470" width="380" height="150" rx="12" fill="#e6f0fc" stroke="#5283b5" stroke-width="2"/>
+<text x="810.0" y="517.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Fixed SIFT + RANSAC</text>
+<text x="810.0" y="545.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">same matcher for every method</text>
+<text x="810.0" y="573.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">no descriptors / no fit = failure</text>
+<rect x="60" y="470" width="450" height="150" rx="0" fill="#fff0dc" stroke="#bf8b47" stroke-width="2"/>
+<text x="285.0" y="517.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Homography AUC @ 3 / 5 / 10 px</text>
+<text x="285.0" y="545.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">fit failure rate; all-pair denominator</text>
+<text x="285.0" y="573.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">parent-macro + pair summary</text>
+<rect x="1100" y="750" width="380" height="110" rx="12" fill="#fff0dc" stroke="#bf8b47" stroke-width="2"/>
+<text x="1290.0" y="777.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Secondary checks</text>
+<text x="1290.0" y="805.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">RGB PSNR / LPIPS / DISTS</text>
+<text x="1290.0" y="833.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">geometry latency + coverage</text>
+<rect x="60" y="750" width="550" height="110" rx="12" fill="#edf0f4" stroke="#778495" stroke-width="2"/>
+<text x="335.0" y="777.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Future external confirmation</text>
+<text x="335.0" y="805.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">fixed LightGlue + calibrated views</text>
+<text x="335.0" y="833.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">pose AUC @ 5 / 10 / 20 degrees</text>
+<text x="780.0" y="960.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="15" fill="#667587">No dataset-name dependency    |    No multi-seed ranking or parameter sweep    |    Planar success does not establish 3D reconstruction success</text>
+</svg>

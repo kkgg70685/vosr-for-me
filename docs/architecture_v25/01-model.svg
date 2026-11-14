@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="1000" viewBox="0 0 1560 1000">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#596779"/></marker></defs>
+<rect width="1560" height="1000" fill="white"/>
+<text x="780.0" y="52.5" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="30" fill="#263648">VOSR v2.5 | Observable Continuous Transport</text>
+<text x="780.0" y="107.5" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="17" fill="#667587">Frozen generation + explicit geometry solver | Implementation prototype; natural-image benefit unverified</text>
+<polyline points="250,275.0 330,275.0" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<polyline points="570,275.0 660,275.0" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<text x="615.0" y="263.0" text-anchor="middle" font-family="Arial" font-size="14" fill="#596779" stroke="white" stroke-width="5" paint-order="stroke">one decode</text>
+<polyline points="860,275.0 970,275.0" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<text x="915.0" y="263.0" text-anchor="middle" font-family="Arial" font-size="14" fill="#596779" stroke="white" stroke-width="5" paint-order="stroke">current geometry</text>
+<polyline points="1360,275.0 1270,275.0" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<polyline points="1120.0,350 1120.0,460" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<text x="1120.0" y="393.0" text-anchor="middle" font-family="Arial" font-size="14" fill="#596779" stroke="white" stroke-width="5" paint-order="stroke">continuous command</text>
+<polyline points="970,530.0 900,530.0" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<polyline points="760.0,330 780.0,460" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<text x="770.0" y="383.0" text-anchor="middle" font-family="Arial" font-size="14" fill="#596779" stroke="white" stroke-width="5" paint-order="stroke">material source</text>
+<polyline points="660,530.0 570,530.0" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<text x="615.0" y="518.0" text-anchor="middle" font-family="Arial" font-size="14" fill="#596779" stroke="white" stroke-width="5" paint-order="stroke">proposal</text>
+<polyline points="350,530.0 260,530.0" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<text x="305.0" y="518.0" text-anchor="middle" font-family="Arial" font-size="14" fill="#596779" stroke="white" stroke-width="5" paint-order="stroke">accept</text>
+<polyline points="760.0,220 760,170 30,170 30,530 60,530.0" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<text x="395.0" y="158.0" text-anchor="middle" font-family="Arial" font-size="14" fill="#596779" stroke="white" stroke-width="5" paint-order="stroke">retain when rejected</text>
+<polyline points="460.0,610 460,710 820,710 820.0,740" fill="none" stroke="#596779" stroke-width="2" marker-end="url(#arr)"/>
+<text x="640.0" y="698.0" text-anchor="middle" font-family="Arial" font-size="14" fill="#596779" stroke="white" stroke-width="5" paint-order="stroke">decision record</text>
+<polygon points="78,220 250,220 232,330 60,330" fill="#e6f0fc" stroke="#5283b5" stroke-width="2"/>
+<text x="155.0" y="261.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">LR observation</text>
+<text x="155.0" y="289.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">y  /  RGB</text>
+<rect x="330" y="200" width="240" height="150" rx="12" fill="#f8e6ee" stroke="#b87394" stroke-width="2"/>
+<text x="450.0" y="247.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Frozen VOSR</text>
+<text x="450.0" y="275.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">25 Euler steps</text>
+<text x="450.0" y="303.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">seed = 6</text>
+<rect x="660" y="220" width="200" height="110" rx="0" fill="#f8e6ee" stroke="#b87394" stroke-width="2"/>
+<path d="M 660 234 H 846 V 330 M 846 234 L 860 220" fill="none" stroke="#b87394"/>
+<text x="760.0" y="261.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Native RGB</text>
+<text x="760.0" y="289.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">x0</text>
+<rect x="970" y="200" width="300" height="150" rx="12" fill="#e6f0fc" stroke="#5283b5" stroke-width="2"/>
+<text x="1120.0" y="247.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Observation-conditioned solver</text>
+<text x="1120.0" y="275.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">RGB camera residual</text>
+<text x="1120.0" y="303.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">18 continuous coefficients</text>
+<polygon points="1378,220 1490,220 1472,330 1360,330" fill="#e6f0fc" stroke="#5283b5" stroke-width="2"/>
+<text x="1425.0" y="261.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Same LR</text>
+<text x="1425.0" y="289.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">y</text>
+<rect x="970" y="460" width="300" height="140" rx="0" fill="#e6f3eb" stroke="#4b9270" stroke-width="2"/>
+<path d="M 970 474 H 1256 V 600 M 1256 474 L 1270 460" fill="none" stroke="#4b9270"/>
+<text x="1120.0" y="502.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Whole-image velocity field</text>
+<text x="1120.0" y="530.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">v = B a</text>
+<text x="1120.0" y="558.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">HR-pixel coordinates</text>
+<rect x="660" y="460" width="240" height="140" rx="12" fill="#e6f3eb" stroke="#4b9270" stroke-width="2"/>
+<text x="780.0" y="502.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Explicit transport</text>
+<text x="780.0" y="530.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">exp(-v) + RGB sampling</text>
+<text x="780.0" y="558.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">No rectangular cut-and-paste</text>
+<polygon points="460.0,450 570,530.0 460.0,610 350,530.0" fill="#fff0dc" stroke="#bf8b47" stroke-width="2"/>
+<text x="460.0" y="516.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Residual descent</text>
+<text x="460.0" y="544.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">+ discrete checks?</text>
+<rect x="60" y="470" width="200" height="120" rx="0" fill="#e6f3eb" stroke="#4b9270" stroke-width="2"/>
+<text x="160.0" y="516.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Final RGB</text>
+<text x="160.0" y="544.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">accepted / retained</text>
+<rect x="640" y="740" width="360" height="100" rx="0" fill="#edf0f4" stroke="#778495" stroke-width="2"/>
+<text x="820.0" y="762.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Stage record</text>
+<text x="820.0" y="790.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">native / last revised / final</text>
+<text x="820.0" y="818.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">rank, motion, rejection reason</text>
+<rect x="1060" y="740" width="400" height="110" rx="12" fill="#edf0f4" stroke="#778495" stroke-width="2"/>
+<text x="1260.0" y="767.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">Scope: smooth geometry only</text>
+<text x="1260.0" y="795.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">No missing-content or topology repair</text>
+<text x="1260.0" y="823.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">No HR or annotation at inference</text>
+<text x="780.0" y="960.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="15" fill="#667587">Spatial evidence  /  blue    |    Frozen generator  /  pink    |    Continuous geometry  /  green    |    Evaluation &amp; decisions  /  amber</text>
+</svg>

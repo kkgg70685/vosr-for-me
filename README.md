@@ -1,5 +1,11 @@
 # VOSR for me
 
+本分支新增 **v2.5 可观测连续输运原型**：冻结 VOSR 生成 + RGB 观测约束下的连续坐标求解。已完成源码和 12 项 CPU 测试，尚无真实 CUDA/自然图增量结论。
+
+[模型与运行](src/observable_transport_v25/README.md) · [研究设计与数学](docs/v25/design.md) · [固定评价协议](docs/v25/evaluation.md) · [三页 draw.io](docs/architecture_v25/vosr-v2.5.drawio) · [实际验证状态](docs/v25/validation.md)
+
+分支直接从 main `5b116bd` 创建；下述 v1.5 来源保持原样。
+
 当前 **v1.5 原生结构基础与选择性视觉纠错**的核心源码，整理于 2026-11-11。以冻结的 VOSR 0.5B 多步模型为基础，两条轨迹共享前 16 步；原生路径读取桥前 RGB，执行可信配准和带符号残差纠正，最后与相机校准及跨尺度视觉估计进行分频纠错。
 
 ## 项目阅读入口
