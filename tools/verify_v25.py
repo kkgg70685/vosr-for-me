@@ -33,8 +33,8 @@ for path in paths:
     records.append({'path':path.relative_to(root).as_posix(),'sha256':hashlib.sha256(path.read_bytes()).hexdigest()})
 target=root/'provenance_v25.json'
 if args.write:
-    target.write_text(json.dumps({'version':'2.5.0-prototype','base_main':'5b116bd5f8f998f708c3b265f822b52a40cb668a',
-                                 'files':records},indent=2)+'\n',encoding='utf-8')
+    target.write_bytes((json.dumps({'version':'2.5.0-prototype','base_main':'5b116bd5f8f998f708c3b265f822b52a40cb668a',
+                                  'files':records},indent=2)+'\n').encode('utf-8'))
 else:
     expected=json.loads(target.read_text(encoding='utf-8'))['files']
     assert expected==records,'v2.5 source inventory/hash differs; review before --write'

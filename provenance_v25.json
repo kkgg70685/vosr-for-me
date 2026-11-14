@@ -4,19 +4,19 @@
   "files": [
     {
       "path": "configs/observable_transport_v25.json",
-      "sha256": "42aef22053b0fcad5923d226988e66fffdb1b4ae041b9e6dffc60f57eb4c1e08"
+      "sha256": "730e10d41c5fbfd5083c52c19a6bbc720b65a54c8368607ca5fc593991ce7b68"
     },
     {
       "path": "docs/architecture_v25/01-model.svg",
-      "sha256": "325eb921c61558c23769dec28ddf7489b1fa61c422b744bf5973be2a7e48e17f"
+      "sha256": "cb7f6ce5826ff33c7c51ccf4e705b575d7f362c4c00a1590f7e9d9747d603667"
     },
     {
       "path": "docs/architecture_v25/02-solver.svg",
-      "sha256": "a578192b91f3d7afbde656f8389717f0e52eb7968a2d4ec9839c4b9946a02a3c"
+      "sha256": "aaa25819fb4b18619efbb42470dd776db5a700cd344c5b20e250796813eacf91"
     },
     {
       "path": "docs/architecture_v25/03-evaluation.svg",
-      "sha256": "06bc064c31fb656250dd8582eba4f1862e317a5c9713f9053ca951e00a3b7e53"
+      "sha256": "8a6a2cc106330e7e8d8bf197e2bea58070e7720bb4f7e4fcb515a2968da32fba"
     },
     {
       "path": "docs/architecture_v25/README.md",
@@ -24,7 +24,7 @@
     },
     {
       "path": "docs/architecture_v25/vosr-v2.5.drawio",
-      "sha256": "993cd9adb4b112e6acbd8e7b8ed67e4838ab589c12d73d420045f666b5db6794"
+      "sha256": "7c92032a87aaac3a8e11b996f5ae936d1b6c0d99f82494ff05f5196a7ccce1a5"
     },
     {
       "path": "docs/v25/design.md",
@@ -92,7 +92,7 @@
     },
     {
       "path": "tools/draw_v25.py",
-      "sha256": "ae1f54a24f1668edd7fcdd8c5f0959439b1d3bf4d38bb7d0533f568eaa0c0691"
+      "sha256": "e77819c1f6d6b44f464271d152f612984c85a0b0a70f11c4286c6380a33923ad"
     },
     {
       "path": "tools/render_v25_preview.py",
@@ -100,7 +100,7 @@
     },
     {
       "path": "tools/verify_v25.py",
-      "sha256": "79eb7a9359d80a72711f41ef8e51b8fc54b520c6536a85ae9b56d7d5cb15aa30"
+      "sha256": "61cf0235201e66d009d8fcdcaa11e7ab13ce65bf60f684456557bcb21231762b"
     }
   ]
 }

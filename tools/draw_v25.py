@@ -144,9 +144,9 @@ def main():
                 svg.append(f'<text x="{x+w/2}" y="{y+h/2+(i-(len(lines)-1)/2)*28}" text-anchor="middle" dominant-baseline="middle" font-family="Arial,sans-serif" font-size="18" fill="#263648">{html.escape(line)}</text>')
         label('footer','    |    '.join(p['notes']),40,945,1480,30,15,'#667587')
         svg.append('</svg>')
-        (OUT/(p['name']+'.svg')).write_text('\n'.join(svg),encoding='utf-8')
+        (OUT/(p['name']+'.svg')).write_bytes('\n'.join(svg).encode('utf-8'))
     ET.indent(mx)
-    ET.ElementTree(mx).write(OUT/'vosr-v2.5.drawio',encoding='utf-8',xml_declaration=True)
+    (OUT/'vosr-v2.5.drawio').write_bytes(ET.tostring(mx,encoding='utf-8',xml_declaration=True).replace(b'\r\n',b'\n'))
     print('Generated three editable pages and same-layout SVG previews')
 
 
